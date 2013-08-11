@@ -1,15 +1,60 @@
-This handbook is a work-in-progress
+This handbook is a work-in-progress. It's intended to be your companion for developing Substance applications. 
 
 # Introduction
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+## Challenges of modern digital publishing
+
+### Content Creation
+
+In the beginning there is content creation. Text needs to be written, annotated and structured. Images, tables and lists need to be added. Today, the addition of interactive content (such as visualizations, interactive maps, etc.) is becoming increasingly important and should be supported by publishing systems. - See more at: http://blog.okfn.org/2013/01/15/content-as-data-towards-open-digital-publishing-with-substance/#sthash.PUUD5nOk.dpuf
+
+### Quality Management
+
+In order to ensure quality and consistency of digital content, publishers need to setup a peer-review workflow. Publishing systems must provide means for reviewers to suggest ideas and report errors, and should offer easy communication between reviewers and authors.
+
+### Publishing
+
+Once the content is complete, it’s time to share it with the public. Publishing used to be a manual process involving expert knowledge and consuming a substantial amount of time, but software tools have now automatized it. Authors should be able to share their work online themselves, without any manual steps being necessary.
+
+### Change Management
+
+Even if the best review processes were applied, all published content is prone to inconsistencies and errors. Over time, pieces of content need to be updated, additional information added, and new editions of the document published to ensure eventual consistency. Therefore publishing systems must support incremental updates, and offer an easy way to release new editions.
 
 
-# Substance.Data
+### Content distribution
+
+Content distribution is becoming an increasingly complex issue today. Back in the day there was just paper, but today content is also consumed electronically on different platforms: on the web, Ebook Readers and Smartphones. And they are all different. There needs to be a smart mechanism that automagically turns one publication into a variety of formats (ePub, HTML, PDF) so as a publisher, you don’t have to prepare versions for each and every targeted platform.
+
+
+## Possible Solutions
+
+Over the last 2 years we have done a lot of research, and built a working prototype, Substance. Here are some of our conclusions about what makes a good digital publishing system.
+
+### Separate content from presentation
+
+Many traditional publishing systems store rich markup (such as HTML) and thus only allow publishing in that same format, which is a serious limitation when it comes to multi-platform publishing. How would you turn an HTML document into a printable version? How would you optimize it for Ebook Readers that use special document formats (e.g. Amazon Kindle)? By storing content (plain text) and annotations separately, it becomes possible for users to transform their documents into any format.
+
+### Structured Composition
+
+By considering a document as a sequence of content elements rather than one big chunk of formatted text, document editors can provide a better way of writing semantically structured content, as opposed to the visually optimized layouts offered by traditional word-processors.
+
+
+### Offline Editing
+
+We’ve seen the drawbacks of fully web-based publishing solutions, such as high latency and data loss. It turned out that providing an offline editor can significantly improve the user experience during editing and guarantee data security. Importantly information will stay private until users synchronize their publication with a public web-server. Moreover, authors can continue editing even if there’s no internet connection.
+
+
+### Support for Collaboration
+
+
+
+# Modules
+
+## Substance.Data
 
 Data.js is a data representation framework for Javascript. It's being developed in the context of Substance, an open publishing platform. With Substance.Data you can model your domain data using a simple graph-based object model that can be serialized to JSON. It's easy to manipulate and query data on the client (browser) or on the server (Node.js) by using exactly the same API.
 
-## Usage
+### Usage
 
 In your script
 
@@ -83,18 +128,18 @@ You can even do smart querying and have the correct objects returned instead of 
     // => [{id: "springfield", type: "location", citizens: ["bart"]}]
 
 
-## API
+### API
 
 API docs are not yet ready. However to get an overview of the full API please have a look at our commented [testsuite](https://github.com/substance/data/tree/master/tests).
 
-# Substance Document
+## Substance Document
 
 Substance Document is an open standard for manipulating structured digital documents. It helps with the *creation* and *transformation* of digital documents. It ensures *consistency*, separates *content* from *presentation* and provides an easy to use API. It depicts the heart of the Substance platform, a set of tools for content creation and distribution.
 
 A Substance Document can range from loosly structured content involving headings and text, such as reports or articles to more complex things that you wouldn’t consider a traditional document anymore. The format is designed to be extensible, so you can create your own flavors of documents. We put a lot of thought into the design of this module. This release of Substance.Document is a result of more than 12 months of research and development, so we are looking forward to your feedback.
 
 <!-- 
-# Play with the Console
+### Play with the Console
 
 Without too much talking, just have a look yourself. The Substance Console allows you to explore some examples and to mess around with the document manipulation protocol in a playful manner.
 
@@ -102,7 +147,7 @@ Without too much talking, just have a look yourself. The Substance Console allow
 </iframe>-->
 
 
-# Design goals
+### Design goals
 
 - A document consists of a sequence of content nodes of different types (e.g. heading, text, image)
 - A document is manipulated through atomic **operations**
@@ -112,15 +157,15 @@ Without too much talking, just have a look yourself. The Substance Console allow
 - Support for **comments** to have dicussions that can stick on content elements or annotations.
 
 
-# Getting started
+### Getting started
 
 This section is intended to be a step to step guide on how to use the module to programmatically create and transform digital documents of any kind.
 
-### Start tracking a new document.
+**Start tracking a new document.**
 
     var doc = new Substance.Document({ id: "my_doc" });
 
-### Add a first heading to the document.
+**Add a first heading to the document.**
 
 	var opA = ["create", {
         "id": "h1",
@@ -131,7 +176,7 @@ This section is intended to be a step to step guide on how to use the module to 
 
     doc.apply(opA);
 
-### Now let's add another node, this time a text node.
+**Now let's add another node, this time a text node.**
 
 This operation is pretty similar to the previous one, except this time we specify `text` as the content type.
 
@@ -144,7 +189,7 @@ This operation is pretty similar to the previous one, except this time we specif
 
     doc.apply(opB);
 
-### Position nodes
+**Position nodes**
 	
     var opC = [
       "position", "content", {"nodes": ["h1", "t1"], "target": 0}
@@ -153,7 +198,7 @@ This operation is pretty similar to the previous one, except this time we specif
     
     doc.getState();
 
-### Update an existing node
+**Update an existing node**
 
 There's a special API for incrementally updating existing nodes. This works by specifying a delta operation describing only what's changed in the text.
 
@@ -164,7 +209,7 @@ There's a special API for incrementally updating existing nodes. This works by s
     doc.apply(opD);
     doc.get('h1').content; // => "HeadING 1"
 
-### Inspect the document state
+**Inspect the document state**
 
 Now after executing a bunch of operations, it is a good time to inspect the current state of the document.
 
@@ -220,7 +265,7 @@ You can also checkout a particular version by
     doc.chronicle.open(sha);
 
 
-## Annotations
+### Annotations
 
 So far, we have a bare-metal digital document, containing two different types of content nodes. Now we'd also like to store additional contextual information, relevant to a particular portion of text within the document.
 
@@ -245,7 +290,7 @@ Like document content, annotations are manipulated through operations.
     
     document.apply(op);
 
-## Comments
+### Comments
 
 Substance has in mind the usecase of collaborative composition of documents. Thus it allows a lively discussion during the editing process.
 
