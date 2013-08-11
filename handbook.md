@@ -1,6 +1,6 @@
 This handbook is a work-in-progress. It's intended to be your companion for developing Substance applications. 
 
-# Introduction
+# Motivation
 
 ## Challenges of modern digital publishing
 
@@ -46,7 +46,32 @@ We’ve seen the drawbacks of fully web-based publishing solutions, such as high
 
 ### Support for Collaboration
 
+Authoring a publication is an iterative process that may involve many authors simultaneously editing a single document. During that process users should be enabled to add markers and comments to certain text fragments. Markers and comments should stay out of the user’s way, and only be shown contextually (e.g. when the text cursor is matching the corresponding marker).
 
+### Extensibility
+
+Editing requirements are fundamentally different among application domains. While book authors are comfortable with headings, text and images, scientists may demand more advanced content types such as formulas, data-tables and visualizations to prove their research findings. Publishing systems should feature a simple plugin system in order to allow user-specific content types.
+
+# Substance
+
+Substance is a content creation tool and a simple multi-format publishing platform. Whether you produce stories, books, documentations or scientific papers, Substance provides the tools that allow you to create, manage and share your content. It is being built with the idea of Open Knowledge in mind. So if you’d like to publish, comment on and collaborate around public documents, open access research or public domain texts, Substance may be for you.
+
+
+## Open Source
+
+Behind the scenes Substance is mainly composed by a stack of open source modules that are publicly released under the Open Source MIT license, so anyone can contribute and help developing an open standard for annotated text. Substance is meant to be an interoperable platform, rather than a product. Its infrastructure can be used by anyone to build specialized applications on top of it.
+
+## Content is data
+
+Substance considers content as data, which makes them accessible to computers and allows new ways of processing them. Documents can not only be viewed, they can be queried, just like a database. - See more at: http://blog.okfn.org/2013/01/15/content-as-data-towards-open-digital-publishing-with-substance/#sthash.tDsVpqDB.dpuf
+
+## Semantic editing
+
+Instead of editing a big canvas, Substance documents are composed of content elements. While existing solutions (like Google Docs) bring traditional word-processing to the web, Substance focuses on content, by leaving the layout part to the system, not the user. Because of the absence of formatting utilities, it suggests structured content-oriented writing.
+
+## Custom Element Types
+
+Substance.Article comes with a predefined set of element types. Out of the box you can choose from headings, text and images. However, it is easy to implement your very own document type and use it with your tailored version of the Substance Editor.
 
 # Modules
 
