@@ -159,19 +159,12 @@ You can even do smart querying and have the correct objects returned instead of 
 
 API docs are not yet ready. However to get an overview of the full API please have a look at our commented [testsuite](https://github.com/substance/data/tree/master/tests).
 
+
 ## Substance Document
 
-Substance Document is an open standard for manipulating structured digital documents. It helps with the *creation* and *transformation* of digital documents. It ensures *consistency*, separates *content* from *presentation* and provides an easy to use API. It depicts the heart of the Substance platform, a set of tools for content creation and distribution.
+Substance Document is an open standard for manipulating structured digital documents. It helps with the *creation* and *transformation* of digital documents. It ensures *consistency*, separates *content* from *presentation* and provides an easy to use API. It depicts the heart of the Substance platform and serves as an interface for custom document models.
 
 A Substance Document can range from loosly structured content involving headings and text, such as reports or articles to more complex things that you wouldn’t consider a traditional document anymore. The format is designed to be extensible, so you can create your own flavors of documents. We put a lot of thought into the design of this module. This release of Substance.Document is a result of more than 12 months of research and development, so we are looking forward to your feedback.
-
-<!-- 
-### Play with the Console
-
-Without too much talking, just have a look yourself. The Substance Console allows you to explore some examples and to mess around with the document manipulation protocol in a playful manner.
-
-<iframe width="800" height="600" frameborder="0" scrolling="no" src="http://interior.substance.io/document/">
-</iframe>-->
 
 
 ### Design goals
@@ -186,7 +179,7 @@ Without too much talking, just have a look yourself. The Substance Console allow
 
 ### Getting started
 
-This section is intended to be a step to step guide on how to use the module to programmatically create and transform digital documents of any kind.
+This section is intended to be a step to step guide on how to use the module to programmatically create and transform digital documents of any kind. We're using our reference implementation of the document interface, Substance.Article. It features basic content types such as paragraphs, headings, images and codeblocks.
 
 **Start tracking a new document.**
 
@@ -330,6 +323,18 @@ To learn about the full API, please consult our [test suite](https://github.com/
 - simplify rules
 ## Custom Node types
 -->
+
+# Surface
+
+The problem most web-based editors have, is that they're trying to be HTML editors. HTML is powerful hierarchical document presentation format, however it has never been designed to be editable.
+
+With Substance Surface we were defining a simlified ruleset, which makes it possible
+
+- Documents are represented as a list of nodes
+- Each node has 0..n characters (no matter if it's a paragraph an image ) 
+- meeh
+
+
 
 # Developing Substance Applications
 
