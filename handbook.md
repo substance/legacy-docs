@@ -1,12 +1,14 @@
-This handbook is a work-in-progress. It's intended to be your companion for developing Substance applications. 
+[ This handbook is a work-in-progress. It's intended to be your companion for developing Substance applications. ]
 
 # Motivation
+
+With digital publishing we're facing a new domain of problems that we can't solve if we keep treating documents as pieces of paper. With the development of the Substance stack, we assumed that there was no paper.
 
 ## Challenges of modern digital publishing
 
 ### Content Creation
 
-In the beginning there is content creation. Text needs to be written, annotated and structured. Images, tables and lists need to be added. Today, the addition of interactive content (such as visualizations, interactive maps, etc.) is becoming increasingly important and should be supported by publishing systems. - See more at: http://blog.okfn.org/2013/01/15/content-as-data-towards-open-digital-publishing-with-substance/#sthash.PUUD5nOk.dpuf
+It all starts with content creation. Text needs to be written, annotated and structured. Images, tables and lists need to be added. Today, the addition of interactive content (such as visualizations, interactive maps, etc.) is becoming increasingly important and should be supported by publishing systems.
 
 ### Quality Management
 
@@ -28,7 +30,7 @@ Content distribution is becoming an increasingly complex issue today. Back in th
 
 ## Possible Solutions
 
-Over the last 2 years we have done a lot of research, and built a working prototype, Substance. Here are some of our conclusions about what makes a good digital publishing system.
+Over the last 3 years we have done a lot of research, and built a working prototype, Substance. Here are some of our conclusions about what for us makes a good digital publishing system.
 
 ### Separate content from presentation
 
@@ -178,7 +180,7 @@ Without too much talking, just have a look yourself. The Substance Console allow
 - A document is manipulated through atomic **operations**
 - The **history** is tracked, so users reconstruct previous document states at any time
 - Support for incremental text updates, using a protocol similar to [Google Wave](http://www.waveprotocol.org/whitepapers/operational-transform)
-- Support for text **annotations** that are not part of the content, but rather an overlay
+- Support for text **annotations** that are not part of the content, but stored as an overlay
 - Support for **comments** to have dicussions that can stick on content elements or annotations.
 
 
@@ -323,3 +325,119 @@ So if you wanted to support comments in your document model, you can can just de
 
 To learn about the full API, please consult our [test suite](https://github.com/substance/document/blob/master/tests). It should be easy to follow the examples.
 
+
+<!--# Surface
+- simplify rules
+## Custom Node types
+-->
+
+# Developing Substance Applications
+
+If the world really needs another application, it has to be a virtual collaborative cookbook. A cookbook consists of recipies, which describe a dish and list the ingredients necessary.
+
+## Substance.Recipe
+
+Let's model a new document format, the Substance Recipe. Let's base it off the latest [Substance.Article](https://github.com/substance/article/blob/master/article.js) definition. 
+
+
+First you want to rename `article.js` to `recipe.js` and adjust some code. `Article`
+
+    
+    var Recipe = function(options) {
+    ...
+    options.schema.id = "substance-recipe";
+
+
+Then you can delete all node types in the `nodes` folder except for `node` and `text`.
+
+
+
+
+
+## Create ingredient node type `ingredient`
+
+Create a folder `nodes/ingredient`.
+
+Then, the node definition goes to `nodes/ingredient/ingredient.js`.
+
+    "use strict";
+
+    var Ingredient = require("../text");
+
+    var Ingredient = function(node) {
+      Text.call(this, node);
+    };
+
+    Ingredient.type = {
+      "parent": "content",
+      "properties": {
+        "content": "string"
+      }
+    }
+
+    Ingredient.properties = {
+      mergeableWith: [], // maybe remove heading here
+      preventEmpty: false,
+      allowedAnnotations: ["emphasis", "strong", "link", "idea", "question", "error"]
+    };
+
+    Ingredient.Prototype = function() {
+
+    };
+
+    Ingredient.Prototype.prototype = Text.prototype;
+    Ingredient.prototype = new Ingredient.Prototype();
+
+    module.exports = Ingredient;
+
+
+We also define a view for our new node type in `nodes/ingredient/ingredient_view.js`
+
+    "use strict";
+
+    var _ = require('underscore');
+    var util = require('substance-util');
+    var html = util.html;
+
+    var TextView = require('../text').View;
+
+    var IngredientView = function(node) {
+      IngredientView.call(this, node);
+
+      this.$el.addClass('content-node ingredient');
+    };
+
+    ParagraphView.Prototype = function() {
+
+    };
+
+    ParagraphView.Prototype.prototype = IngredientView.prototype;
+    ParagraphView.prototype = new ParagraphView.Prototype();
+
+    module.exports = ParagraphView;
+
+
+Each node type comes with it's own stylesheet `nodes/ingredient/ingredient.css`
+
+    .content-node.ingredient {
+      padding: 20px 0px;
+      border-left: 4px solid #ddd;
+    }
+
+    .content-node.ingredient .content {
+      min-height: 28px;
+    }
+
+Finally we have to add an `index.js` file to expose the node type to the application.
+
+    "use strict";
+
+    var Ingredient = require('./ingredient');
+    Ingredient.View = require('./ingredient_view');
+
+    module.exports = Ingredient;    
+
+
+Now if you start your Substance application you should be able to create Recipe documents and add ingredients to it.
+
+    $ substance
