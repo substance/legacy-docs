@@ -1,4 +1,4 @@
-[ This handbook is a work-in-progress. It's intended to be your companion for developing Substance applications. ]
+[ This handbook is a work-in-progress. It's intended to be your companion for developing Substance applications. ]
 
 # Motivation
 
@@ -111,7 +111,7 @@ Start with a schema.
 Create a new `Data.Graph`.
 
     var graph = new Data.Graph(schema);
-    
+
 
 Add some objects.
 
@@ -143,11 +143,11 @@ Querying is easy too. With `get` you can either look up a node by id or specify 
       name: "Bart Simpson",
       "location": "springfield"
     }
-    
+
     // Return a property
     graph.get(["springfield", "citizens"]);
     // => ["springfield"]
-    
+
 You can even do smart querying and have the correct objects returned instead of ids.
 
     // Return a property
@@ -210,12 +210,12 @@ This operation is pretty similar to the previous one, except this time we specif
     doc.apply(opB);
 
 **Position nodes**
-	
+
     var opC = [
       "position", "content", {"nodes": ["h1", "t1"], "target": 0}
     ];
     doc.apply(opC);
-    
+
     doc.getState();
 
 **Update an existing node**
@@ -234,7 +234,7 @@ There's a special API for incrementally updating existing nodes. This works by s
 Now after executing a bunch of operations, it is a good time to inspect the current state of the document.
 
     doc.toJSON();
-    
+
 This is how the JSON serialization looks like:
 
     {
@@ -307,7 +307,7 @@ Like document content, annotations are manipulated through operations.
         "range": {start: [0,1], end: [0, 5]}
       }
     ];
-    
+
     document.apply(op);
 
 ### Comments
@@ -331,7 +331,7 @@ The problem most web-based editors have, is that they're trying to be HTML edito
 With Substance Surface we were defining a simlified ruleset, which makes it possible
 
 - Documents are represented as a list of nodes
-- Each node has 0..n characters (no matter if it's a paragraph an image ) 
+- Each node has 0..n characters (no matter if it's a paragraph an image )
 - meeh
 
 
@@ -342,12 +342,12 @@ If the world really needs another application, it has to be a virtual collaborat
 
 ## Substance.Recipe
 
-Let's model a new document format, the Substance Recipe. Let's base it off the latest [Substance.Article](https://github.com/substance/article/blob/master/article.js) definition. 
+Let's model a new document format, the Substance Recipe. Let's base it off the latest [Substance.Article](https://github.com/substance/article/blob/master/article.js) definition.
 
 
 First you want to rename `article.js` to `recipe.js` and adjust some code. `Article`
 
-    
+
     var Recipe = function(options) {
     ...
     options.schema.id = "substance-recipe";
@@ -440,7 +440,7 @@ Finally we have to add an `index.js` file to expose the node type to the applica
     var Ingredient = require('./ingredient');
     Ingredient.View = require('./ingredient_view');
 
-    module.exports = Ingredient;    
+    module.exports = Ingredient;
 
 
 Now if you start your Substance application you should be able to create Recipe documents and add ingredients to it.
