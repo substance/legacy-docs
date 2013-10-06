@@ -1,6 +1,8 @@
 # Introduction
 
-Substance is a completely free and open technology stack motivated by the idea of taking a pure data-driven approach to working with digital documents. From content creation to publishing we believe that there should be better tools that address the problem from a fresh angle.
+Substance is a completely free and [open](http://github.com/substance) technology stack motivated by the idea of taking a pure data-driven approach to working with digital documents. From content creation to publishing we believe that there should be better tools that address the problem from a fresh angle. To get started we recommend that you read through our [Manual](#substance/manual) and follow the instructions in the official [Tutorial](#substance/tutorial).
+
+Substance is build around the following core ideas:
 
 ## Semantic editing
 
@@ -48,7 +50,7 @@ We are collaborating with Open Access publishers and have implemented a new way 
 
 # Work with us
 
-Do you see Substance work for your use-case? Contact us at info@substance.io. We're happy to discuss options how Substance can be integrated with your application use-cases.
+Do you see Substance fit for your business use-case? Contact us at [info@substance.io](mailto:info@substance.io). We're happy to discuss options how Substance can be integrated with your application use-cases.
 
 # Contribute
 
@@ -67,5 +69,5 @@ Our most recent work was backed by a [Shuttleworth](http://www.shuttleworthfound
 
 ![](http://substance.io/images/shuttleworth.jpg)
 
-We'd also like to thank anyone who supported our Pledgie campaign. The bad news is we didn't reach our funding goal. The good news is we got the proposed release ready anyway. We were working hard on the past 6 months and reimplemented Substance from scratch. A solid foundation is now ready, paving the way for exciting use-cases and applications.
+We'd also like to thank anyone who supported our [Pledgie campaign](https://pledgie.com/campaigns/18902). The bad news is we didn't reach our funding goal. The good news is we got the proposed release ready anyway. We were working hard on the past 6 months and reimplemented Substance from scratch. A solid foundation is now ready, paving the way for exciting use-cases and applications.
 
