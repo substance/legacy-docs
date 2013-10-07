@@ -15,6 +15,7 @@ Its features include:
 - A plugin system for customized content types (Substance.Nodes)
 
 
+Substance is a work-in-progress by design. We'd like avoid the lock-in phenomenon and design a system that can deal with the ever-changing needs of its users. We don't propose a one-size fits it all solution. Instead we'd like to encourage you to take the pieces you need and build your very own publishing system. We're glady reviewing your adaptions and include them in the core system when it makes sense.
 
 # Modules
 

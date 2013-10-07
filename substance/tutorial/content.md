@@ -1,11 +1,9 @@
-In this tutorial you'll learn:
+Welcome to the official Substance Tutorial. You'll learn:
 
 1. How to [convert](convert) a markdown file into a Substance Article
 2. [Display](display) Substance content in our interactive reader.
 3. Create a customized [renderer](renderer)
 4. [Submit](publish) a publication to Substance.io
-
-Substance is a work-in-progress by design. We'd like avoid the lock-in phenomenon and design a system that can deal with the ever-changing needs of its users. We don't propose a one-size fits it all solution. Instead we'd like to encourage you to take the pieces you need and build your very own publishing system. We're glady reviewing your adaptions and include them in the core system when it makes sense.
 
 # Preparations
 
@@ -40,14 +38,13 @@ Now you should be able to run the `substance` program from the command line.
 
 
 
-
 # Turn a markdown file into a Substance Article {#convert}
 
-Let's suppose we have a markdown document `lorem_ipsum.md` that we'd like to turn into a [Substance.Article](http://github.com/substance/article). Substance comes with its own converter, available as a separate module. It makes use of Pandoc, a universal document converter. Let's create a little node program that takes a markdown file as an input, turns it into a Substance Article and stores it on the disk.
+Here comes lesson one. Let's suppose we have a markdown document `lorem_ipsum.md` that we'd like to turn into a [Substance.Article](http://github.com/substance/article). Substance comes with its own converter, available as a separate module. It makes use of Pandoc, a universal document conversion tool. Let's create a little node program that takes a markdown file as an input, turns it into a Substance Article and stores it on the disk.
 
 ## Setup
   
-With your console navigate to lesson 1.
+With your console navigate to the first lesson.
 
     $ cd 001-convert-md-to-substance
 
@@ -57,7 +54,7 @@ $ substance --update
 
 ## Implementation
 
-Now take a glance at the `convert.js` utility. That's all you need for a simple conversion tool, by just delegating work to the Substance.Converter.
+Now take a glance at the `convert.js` utility. That's all you need for a simple conversion tool, by just delegating the hard work to the Substance.Converter, and of course Pandoc.
 
     var fs = require('fs');
     var Converter = require("substance-converter");
@@ -87,11 +84,10 @@ Now take a glance at the `convert.js` utility. That's all you need for a simple 
 
 Now call your node program.
 
-    $ node convert.js hello-world.md hello-world.json
+    $ node convert.js lorem_ipsum.md lorem_ipsum.json
 
 
-
-
+Great. Now try the same with your very own markdown file.
 
 
 
@@ -100,9 +96,7 @@ Now call your node program.
 
 # Present your content {#display}
 
-## Intro
-
-In collaboration with eLife, we have developed an interactive reader for scientific documents which is based on the Substance Document Model, [eLife Lens](http://lens.substance.io). In this lesson we'll be displaying our fresh `hello-world.json` document using a customized build of eLife Lens, the Substance.Reader. You'll be able to drop
+In collaboration with eLife, we have developed an interactive reader for scientific documents which is based on the Substance Document Model, [eLife Lens](http://lens.substance.io). In this lesson we'll be displaying your freshly generated Substance Article using a customized build of eLife Lens, the Substance.Reader. 
 
 ## Setup
 
@@ -114,15 +108,18 @@ The folder contains a stable build of the Substance.Reader. Since the document i
 
     $ python -m SimpleHTTPServer
 
-Open your browser and navigate to `http://localhost:8000`
+Open your browser and navigate to `http://localhost:8000`. You should see a default document ([Figure 1](figure_1)).
 
 ## Implementation
 
-All you need to do now is replacing data/document.json with your own freshly converted Substance Article.
+All you need to do is storing a copy of your Substance document in the data folder (e.g. `data/mydoc.json`. You also need to adjust `index.html` so it points to your document like so:
 
 
 
-
+    var app = new Substance({
+      // Endpoint must have CORS enabled, or file is served from the same domain as the app
+      document_url: "http://example.com/path/to/any-substance-doc.json"
+    });
 
 
 
@@ -145,8 +142,4 @@ This lesson is not yet ready.
 
 # Publish your document on Substance.io {#publish}
 
-1. Fork the `substance/io` project on Github.
-2. Start the server
-3. Add your document to the docs folder. (Use your favorite text editor)
-4. Commit your changes
-5. Submit a Pull Request on Github
+This lesson is not yet ready.
