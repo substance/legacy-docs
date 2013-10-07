@@ -1,13 +1,13 @@
 In this tutorial you'll learn:
 
 1. How to [convert](convert) a markdown file into a Substance Article
-2. [Display](display) Substance content in our interactive reading environment.
+2. [Display](display) Substance content in our interactive reader.
 3. Create a customized [renderer](renderer)
 4. [Submit](publish) a publication to Substance.io
 
 Substance is a work-in-progress by design. We'd like avoid the lock-in phenomenon and design a system that can deal with the ever-changing needs of its users. We don't propose a one-size fits it all solution. Instead we'd like to encourage you to take the pieces you need and build your very own publishing system. We're glady reviewing your adaptions and include them in the core system when it makes sense.
 
-# Preprations
+# Preparations
 
 Make sure you have the following software packages installed on your computer before starting over with the tutorial.
 
@@ -43,13 +43,13 @@ Now you should be able to run the `substance` program from the command line.
 
 # Turn a markdown file into a Substance Article {#convert}
 
-Let's suppose we have a markdown document `hello-world.md` that we'd like to turn into a [Substance.Article](http://github.com/substance/article). Substance comes with its own converter, available as a separate module. It makes use of Pandoc, a universal document converter. Let's create a little node program that takes a markdown file as an input, turns it into a Substance Article and stores it on the disk.
+Let's suppose we have a markdown document `lorem_ipsum.md` that we'd like to turn into a [Substance.Article](http://github.com/substance/article). Substance comes with its own converter, available as a separate module. It makes use of Pandoc, a universal document converter. Let's create a little node program that takes a markdown file as an input, turns it into a Substance Article and stores it on the disk.
 
 ## Setup
   
 With your console navigate to lesson 1.
 
-$ cd 001-convert-md-to-substance
+    $ cd 001-convert-md-to-substance
 
 Pull-in dependencies using the Substance Screwdriver.
 
