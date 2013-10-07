@@ -17,9 +17,9 @@ Please fork and clone the [Substance Tutorial](https://github.com/substance/tuto
 
     $ git clone https://github.com/your_user/substance-tutorial
 
-During the tutorial we'd like to encourage you to review the contents of the tutorial. If you spot an error please just fix it, push it to your fork and file a pull request on Github.
+During the tutorial we'd like to encourage you to review the contents of the tutorial. If you spot an error please just fix it, push it to your fork and file a [Pull Request](https://help.github.com/articles/using-pull-requests) on Github.
 
-# Turn a markdown file into a Substance Article
+# Turn a markdown file into a Substance Article {#convert}
 
 ## Intro
 
