@@ -61,8 +61,6 @@ We’ve been developing Substance for three years now without any funding, makin
 You can report bugs and discuss features on [GitHub](http://github.com/substance), on Freenode in the `#_substance` IRC channel, or send tweets to [@_substance](http://twitter.com/_substance).
 And if that's not enough, post to our [mailing list](https://groups.google.com/forum/?fromgroups#!forum/substance_).
 
-We just realized the more concrete our goals get, the more we see the need to spend dedicated time on development, in order to come to the day when we can say "It’s finally here!". Please help us by supporting our [campaign](http://www.pledgie.com/campaigns/18902) and spread the word about it. 
-
 # Thanks
 
 We'd like to thank anybody who supported the project from the beginning. We've received code contributions from people all over the world. Among them (in chronological order) [Samo Korosec](http://dribbble.com/froodee), [Tim Baumann](https://github.com/timjb), [Victor Saiz](https://github.com/vectorsize) and [Daniel Beilinson](https://github.com/Integral). They all helped to shape the idea and implementation.
