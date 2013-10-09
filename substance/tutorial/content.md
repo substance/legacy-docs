@@ -1,25 +1,25 @@
 Welcome to the official Substance Tutorial. You'll learn:
 
-1. How to [convert](convert) a markdown file into a Substance Article
+1. How to [convert](convert) a Markdown file into a Substance Article
 2. [Display](display) Substance content in our interactive reader.
 3. Create a customized [renderer](renderer)
 4. [Submit](publish) a publication to Substance.io
 
-# Preparations
+*The tutorial is at an early stage. We'd like to improve it over time and always keep it up to date with our latest API's. You can help us making this tutorial better by contributing to the source [Markdown file](https://github.com/substance/docs/blob/0.1.x/substance/tutorial/content.md).*
+
+Preparations
+=====================================================
 
 Make sure you have the following software packages installed on your computer before starting over with the tutorial.
 
-   - Node.js >=0.10.x
+   - [Node.js](http://nodejs.org/) >=0.10.x
    - [Pandoc](http://johnmacfarlane.net/pandoc/) >= 1.12.x
 
-Please fork and clone the [Substance Tutorial](https://github.com/substance/tutorial) repo.
+Please clone the [Substance Tutorial](https://github.com/substance/tutorial) repo, which has the complete code for the examples.
 
-    $ git clone https://github.com/your_user/substance-tutorial
+    $ git clone https://github.com/substance/tutorial
 
-During the tutorial we'd like to encourage you to review the contents of the tutorial. If you spot an error please just fix it, push it to your fork and file a [Pull Request](https://help.github.com/articles/using-pull-requests) on Github.
-
-
-Throughout our tutorial we are using the [Substance Screwdriver](http://github.com/substance/screwdriver) to manage dependencies. The tutorial always runs against the latest stable dev versions. Please note that for all official releases we also provide [NPM](http://npmjs.org/) packages.
+Throughout our tutorial we are using the [Substance Screwdriver](http://github.com/substance/screwdriver) for managing dependencies. The tutorial always runs against the latest stable dev versions. Please note that for all official releases we also provide [NPM](http://npmjs.org/) packages.
   
     $ git clone https://github.com/substance/screwdriver.git
     $ cd screwdriver
@@ -31,19 +31,14 @@ Now you should be able to run the `substance` program from the command line.
 
 
 
+Turn a Markdown file into a Substance Article {#convert}
+=====================================================
 
 
-
-
-
-
-
-# Turn a markdown file into a Substance Article {#convert}
-
-Here comes lesson one. Let's suppose we have a markdown document `lorem_ipsum.md` that we'd like to turn into a [Substance.Article](http://github.com/substance/article). Substance comes with its own converter, available as a separate module. It makes use of Pandoc, a universal document conversion tool. Let's create a little node program that takes a markdown file as an input, turns it into a Substance Article and stores it on the disk.
+Here comes the first lesson. Let's suppose we have a markdown document `lorem_ipsum.md` that we'd like to turn into a [Substance.Article](http://github.com/substance/article). Substance ships with its own [converter](http://github.com/substance/converter) module, which makes use of Pandoc, a universal document conversion tool. Let's create a little node program that takes a Markdown file as an input, turns it into a Substance Article and stores the resulting JSON on disk.
 
 ## Setup
-  
+
 With your console navigate to the first lesson.
 
     $ cd 001-convert-md-to-substance
@@ -82,21 +77,19 @@ Now take a glance at the `convert.js` utility. That's all you need for a simple 
       fs.writeFileSync(outputFile, JSON.stringify(doc, null, '  '));
     });
 
-Now call your node program.
+Call your node program, to finally perform the conversion.
 
     $ node convert.js lorem_ipsum.md lorem_ipsum.json
 
 
-Great. Now try the same with your very own markdown file.
+Great. Now try the same with your very own Markdown document. If you don't get to convert your markdown file, please let us know in the [issue tracker](https://github.com/substance/converter/issues).
 
 
 
+Present your content {#display}
+=====================================================
 
-
-
-# Present your content {#display}
-
-In collaboration with eLife, we have developed an interactive reader for scientific documents which is based on the Substance Document Model, [eLife Lens](http://lens.substance.io). In this lesson we'll be displaying your freshly generated Substance Article using a customized build of eLife Lens, the Substance.Reader. 
+In collaboration with [eLife](http://elifesciences.org), we have developed an interactive reader for scientific documents which is based on the Substance Document Model, [eLife Lens](http://lens.substance.io). In this lesson we'll be displaying your freshly generated Substance Article using a customized build of eLife Lens, the Substance.Reader. 
 
 ## Setup
 
@@ -104,7 +97,7 @@ Navigate to lesson 2.
 
     $ cd 002-display-document
 
-The folder contains a stable build of the Substance.Reader. Since the document is loaded via AJAX, you just need to serve the folder through a webserver. The probably easiest way to do this is starting Python's SimpleHTTPServer, that's included in most operating systems.
+The folder contains a stable build of the Substance.Reader. Since the document is loaded via AJAX, you just need to serve the folder through a webserver. The probably easiest way to do this is starting Python's SimpleHTTPServer, that ships with most operating systems.
 
     $ python -m SimpleHTTPServer
 
@@ -112,9 +105,7 @@ Open your browser and navigate to `http://localhost:8000`. You should see a defa
 
 ## Implementation
 
-All you need to do is storing a copy of your Substance document in the data folder (e.g. `data/mydoc.json`. You also need to adjust `index.html` so it points to your document like so:
-
-
+Now store a copy of your Substance document in the data folder (e.g. `data/mydoc.json`. You also need to adjust `index.html` so it points to your document like so:
 
     var app = new Substance({
       // Endpoint must have CORS enabled, or file is served from the same domain as the app
@@ -127,19 +118,59 @@ All you need to do is storing a copy of your Substance document in the data fold
 
 
 
+Create a customized renderer {#renderer}
+=====================================================
 
-# Create a customized renderer {#renderer}
+Displaying the document in the official Substance.Reader is great, but what if you wanted to present your article in a more customized fashion?
+
+You don't have to write it from scratch. We can utilize [Substance.Surface](http://github.com/substance/surface) which powers our reader and editor.
+
+
+## Setup
+
+Navigate to lesson 3.
+
+    $ cd 003-customized-renderer
+
+Again start our little Python server.
+
+    $ python -m SimpleHTTPServer
+
+
+## Implementation
+
+Using the surface is really easy. The first thing to do is constructing a `Substance.Article` based on our JSON input.
+
+    var doc = Substance.Article.fromSnapshot(loremIpsumDoc);
+
+A Substance document stores multiple views on its content ([Figure 2](figure_2)). In our case we're interested in the `content` view. Therefore we create a `Document.Controller` instance that we need to paramatrize the `Surface`.
+
+    var docCtrl = new Substance.Document.Controller(doc, {
+      view: "content"
+    });
+
+Now we are ready to create the Substance.Surface instance.
+
+    var surface = new Substance.Surface(docCtrl, {
+      editable: false
+    });
+
+Let's wait until the DOM is ready and then render the document and attach it to the body element.
+
+    $(function() {
+      $('body').append(surface.render().el);
+    });
+
+The markup that is produced by the Surface using the `Substance.Article` definition is pretty straight forward ([Figure 3](figure_3)). 
+
+Now let's add some styles 
+
+The complete code is located in the `index.html` file.
+
+
+Publish your document on Substance.io {#publish}
+=====================================================
 
 This lesson is not yet ready.
 
-
-
-
-
-
-
-
-
-# Publish your document on Substance.io {#publish}
-
-This lesson is not yet ready.
+[Pull Request](https://help.github.com/articles/using-pull-requests)

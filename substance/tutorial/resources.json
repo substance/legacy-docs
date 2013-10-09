@@ -5,7 +5,23 @@
       "type": "figure",
       "label": "Figure 1",
       "url": "http://f.cl.ly/items/0b132G3A2G3Q3o2l362d/Screen%20Shot%202013-10-07%20at%2011.45.15%20PM.png",
-      "caption": "A Substance document shown in the reader."
+      "caption": "A Substance document shown in our reader app."
+    },
+    {
+      "id": "figure_2",
+      "type": "figure",
+      "label": "Figure 2",
+      "url": "http://f.cl.ly/items/0J3m3D3Z2u3E292A1j3T/lens-document-views.png",
+      "caption": "A Substance document can handle multiple views on its content nodes."
+    },
+    {
+      "id": "figure_3",
+      "type": "figure",
+      "label": "Figure 3",
+      "url": "http://f.cl.ly/items/0z0s1k1B0c0o0a2h0i3L/Screen%20Shot%202013-10-09%20at%201.48.58%20PM.png",
+      "caption": "Markup produced by the Substance Surface."
     }
   ]
 }
+
+
