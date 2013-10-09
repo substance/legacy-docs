@@ -67,7 +67,7 @@ We'd like to thank anybody who supported the project from the beginning. We've r
 
 Our most recent work was backed by a [Shuttleworth](http://www.shuttleworthfoundation.org/) Flash Grant that we received earlier this year. 
 
-![](http://substance.io/images/shuttleworth.jpg)
+![](http://f.cl.ly/items/3b1G0i0t0O452C0b0c30/shuttleworth-1.jpg)
 
 We'd also like to thank anyone who supported our [Pledgie campaign](https://pledgie.com/campaigns/18902). The bad news is we didn't reach our funding goal. The good news is we got the proposed release ready anyway. We were working hard on the past 6 months and reimplemented Substance from scratch. A solid foundation is now ready, paving the way for exciting use-cases and applications.
 
