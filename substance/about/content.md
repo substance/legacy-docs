@@ -56,7 +56,7 @@ Do you see Substance fit for your business use-case? Contact us at [info@substan
 
 # Contribute
 
-We’ve been developing Substance for three years now without any funding, making this a project mainly built out of voluntary effort. Our goal is making Substance an open standard for interoperable digital publishing.
+We’ve been developing Substance for three years now with almost no funding, making this a project mainly built out of voluntary effort. Anyway, our ambitious goal is making Substance an open de-facto-standard for interoperable digital publishing.
 
 You can report bugs and discuss features on [GitHub](http://github.com/substance), on Freenode in the `#_substance` IRC channel, or send tweets to [@_substance](http://twitter.com/_substance).
 And if that's not enough, post to our [mailing list](https://groups.google.com/forum/?fromgroups#!forum/substance_).
