@@ -1,6 +1,8 @@
 # Introduction
 
-Substance is a completely free and [open](http://github.com/substance) technology stack motivated by the idea of taking a pure data-driven approach to working with digital documents. From content creation to publishing we believe that there should be better tools that address the problem from a fresh angle. To get started we recommend that you read through our [Manual](#substance/manual) and follow the instructions in the official [Tutorial](#substance/tutorial).
+Substance provides an extensive, customizable content creation and annotation framework that enables user-centric interfaces and automatic data processing via your web-browser. Thanks to its modular nature it creates an ideal environment for many integration scenarios. Substance is completely free and [open source](http://github.com/substance).
+
+To get started we recommend that you read through our [Manual](#substance/manual) and follow the instructions in the official [Tutorial](#substance/tutorial). 
 
 Substance is built around the following core ideas:
 

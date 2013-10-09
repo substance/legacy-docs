@@ -190,7 +190,7 @@ Publish an article on Substance.io {#publish}
 
 We'd like to invite you do publish guest articles on Substance.io. We'll create new collections on demand to categorize articles coming from the community.
 
-Substance.io is powered by our minimal publishing system, [IO](http://github.com/substance/io). It lets you write your article's in Markdown and define figures, tables etc. in a simple JSON syntax. All that input is compiled into a full-fledged Substance Article including the main content, meta information like the title and authors and figures you have specified. It works similarly to [Jekyll](http://jekyllrb.com/), a static site generator written in Ruby. Compiled IO document repositories can be hosted on any webserver. It's only static files.
+Substance.io is powered by our minimal publishing system, [IO](http://github.com/substance/io). It lets you write your articles in Markdown and define figures, tables etc. in a simple JSON syntax. All that input is compiled into a full-fledged Substance Article including the main content, meta information like the title and authors and figures you have specified. It works similarly to [Jekyll](http://jekyllrb.com/), a static site generator written in Ruby. Compiled IO document repositories can be hosted on any webserver. It's only static files.
 
 ## Setup
 
