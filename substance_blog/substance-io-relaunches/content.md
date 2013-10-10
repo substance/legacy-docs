@@ -26,5 +26,4 @@ In collaboration with Open Access publisher eLife we developed a new way to disp
 
 ### Fidus Writer
 
-We're teaming up with the guys behind [FidusWriter](http://fiduswriter.org/). They already have a working solution for editing scientific documents within the browser. Version 2.0 will integrate Substance compontents. We're excited for 
-
+We're teaming up with the guys behind [Fidus Writer](http://fiduswriter.org/). They already have a working solution for editing scientific documents in the browser. Together we'll be building version 2.0, using the Substance technology stack, allowing incremental updates, versioning and replication for collaborative workflows. 

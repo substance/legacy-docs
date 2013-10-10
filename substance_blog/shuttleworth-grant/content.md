@@ -1,12 +1,12 @@
 We just learned that Substance got selected for the $ 5,000 Suttleworth Flash Grant. This is really exciting/rewarding and we look forward to put more dedicated time on finishing our API's and releasing a new version of the Substance Composer. Thank you Mark Horner for nominating us!
 
-![](http://substance.io/images/shuttleworth.jpg)
+![](http://f.cl.ly/items/3b1G0i0t0O452C0b0c30/shuttleworth-1.jpg)
 
 We haven't posted many updates in the past weeks, which is mainly because we've been too busy working on the next iteration of the Substance platform and another top secret projects. ;) However, I'd give you a quick overview about what we're up to, and what you can expect the next release of the Substance platform will offer:
 
 First off, we've already reached feature-complete status ealier this year. Image embedding is back and so is support for links, inline code and code blocks. We've also implemented the full collaboration workflow, so users can start co-editing a shared document.
 
-![](http://substance.io/images/substance-composer.png)
+![](http://f.cl.ly/items/0a1n0m080v3N1h423l25/substance-composer-1.png)
 
 However before shipping those features we thought now is the perfect time to get things serious. We don't want to launch before we are confident that our system is stable and runs reliable when under load. We're working on a bunch of greater refactorings now that we really know what problems we need to solve. We've setup a [test suite](https://github.com/substance/tests) which allows us to test complex editing scenarios and cover edge cases. We're also stabilizing the API of our core [document model](https://github.com/substance/document). We have some really tough problems to solve, since allowing co-edits combined with offline replication is not trivial. There will be numerous conflict situation the users will have to deal with. In order to support these workflows we need a good versioning API, or in other words, we need something like Git, but optimized for JSON-based documents rather than plain text. So [Substance Chronicle](https://github.com/substance/chronicle) was born. It's a git-inspired versioning API based on Operational Transformations (OT). I could talk for hours about this, but I think it's better to get back to work. You can follow Substance development at [Github](https://github.com/substance/). Please just keep in mind there are still many moving parts and we can't offer support for the time being.
 

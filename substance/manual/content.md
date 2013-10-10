@@ -19,7 +19,7 @@ Substance is a work-in-progress by design. We'd like avoid the lock-in phenomeno
 
 # Modules
 
-Substance modules can be used independenly. You can install them using NPM, or use the Substance Screwdriver.
+Substance modules can be used independenly. You can install them using NPM or use the [Substance Screwdriver](http://github.com/substance/screwdriver).
 
     npm install <module-name>
 
@@ -36,7 +36,7 @@ With Substance.Data you can model your domain data using a simple graph-based ob
 
 ### Usage
 
-First, start define a schema.
+Start with a schema.
 
     var schema = {
       "person": {
@@ -109,7 +109,7 @@ To get an overview of the full API please have a look at our commented [testsuit
 
 ## Substance.Document
 
-**Substance Document** is an open standard for manipulating structured digital documents. It helps with the creation and transformation of digital documents. It ensures consistency, separates content from presentation and provides an easy to use API. It depicts the heart of the Substance platform and serves as an interface for custom document models.
+**Substance Document** is an open standard for manipulating structured digital documents. It ensures consistency, separates content from presentation and provides an easy to use API. It depicts the heart of the Substance platform and serves as an interface for custom document models.
 
 A Substance Document can range from loosly structured content involving headings and text, such as reports or articles to more complex things that you wouldn’t consider a traditional document anymore. The format is designed to be extensible, so you can create your own flavors of documents. We put a lot of thought into the design of this module. It is the result of three years of research and development.
 
@@ -143,14 +143,12 @@ Now these building blocks of a document are organized using views. The main body
 
 ## Substance.Article
 
-The Substance.Article is our reference implementation of the Substance Document model. It features basic content types such as paragraphs, headings, images and code blocks. Use this as a starting point for rolling your own Substance based document-format. We've created a different flavor for scientific content, the [Lens.Article](http://lens.substance.io/#lens/lens_article).
+The `Substance.Article` is our reference implementation of the Substance Document model. It features basic content types such as paragraphs, headings, images and code blocks. Use this as a starting point for rolling your own Substance based document-format. We've created a different flavor for scientific content, the [Lens.Article](http://lens.substance.io/#lens/lens_article).
 
 
 ### Usage
 
-This section is intended to be a step to step guide on how to use the module to programmatically create and transform digital documents of any kind.
-
-Start tracking a new document.
+Start tracking a new article.
 
     var doc = new Substance.Article({ id: "my_doc" });
 
@@ -322,11 +320,11 @@ Substance.Chronicle can be considered a low-level API. Some integration and glue
 
 Installation is easy.
 
-  $ npm install substance-chronicle
+    $ npm install substance-chronicle
     
 In your Node.js script:
 
-  var Chronicle = require('substance-chronicle');
+    var Chronicle = require('substance-chronicle');
 
 Basically it is necessary to define some kind of `Change` type and an adapter that can deal with that:
 
@@ -404,10 +402,9 @@ And start the dev environment again.
 
 # Contributing
 
-I'm assuming here that you have push access to the repositories, because as a start I'd like to get the Lens core dev team up and running. I'll provide documentation on how to work with a forked version of a module and submit a pull request soon.
+I'm assuming here that you have push access to the repositories, because as a start I'd like to get the Lens core dev team up and running. You can apply the same steps on a forked version.
 
-
-Say you've made changes to the Substance.Article module. In order to commit them you simply have to navigate to `node_modules/substance-article` and do:
+Say you've made changes to the `Substance.Article` module. In order to commit them you simply have to navigate to `node_modules/substance-article` and do:
 
     $ git add <YOUR STUFF>
     $ git commit -m "Fixed X"
