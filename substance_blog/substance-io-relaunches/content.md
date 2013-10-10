@@ -16,7 +16,7 @@ The new Substance.io is powered by our new minimal publishing system, [IO](http:
 
 ## Substance in the wild
 
-A platform is a platform only if there applications built on top of it. We happy that there's a production-ready Substance app out there. And there's more to come.
+A platform is only a platform if applications built on top of it. We are happy that there's a production-ready Substance app out there. And there are more to come.
 
 ### eLife Lens
 
