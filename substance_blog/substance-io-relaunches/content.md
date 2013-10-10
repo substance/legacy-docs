@@ -4,6 +4,7 @@ Today we relaunch Substance.io as an effort to put more emphasis on Substance as
 
 Along with the relaunch of Substance.io we release the version 0.5.0 of the Substance stack. 0.5.0 ships with the following modules.
 
+- [Substance.Data](http://github.com/substance/document) - A data representation framework for Javascript.
 - [Substance.Document](http://github.com/substance/document) - A JSON-based document model, that can be customized
 - [Substance.Article](http://github.com/substance/article) - Reference implementation
 - [Substance.Operator](http://github.com/substance/operator) - Support for incremental changes using Operational Transformation
@@ -15,7 +16,7 @@ Please have a look at the official [Manual](#substance/manual) to learn more abo
 
 Limitations
 
-We're still owing you a stable rich text editor. We've got pretty far, but the editor is not yet stable enough to be part of the release.
+We're still owing you a stable rich text editor. We've got really far, but the editor is not yet stable enough to be part of the release.
 
 
 ## Substance IO
