@@ -1,14 +1,22 @@
 Today we relaunch Substance.io as an effort to put more emphasis on Substance as a platform. With Substance, we would like to contribute an extensive **content creation** and **annotation** framework built on **web** infrastructure. It is designed to be customized and integrated into existing workflows.
 
-Since 2010, we managed to solve many of the core problems associated with browser-based document manipulation. To date Substance provides:
+## Substance 0.5.0
 
-- A JSON-based document model, that can be customized (Substance.Document)
-- Support for incremental changes (Substance.Operator)
-- Versioning (Substance.Chronicle)
-- A building block for displaying and editing documents (Substance.Surface)
-- A plugin system for customized content types (Substance.Nodes)
+Along with the relaunch of Substance.io we release the version 0.5.0 of the Substance stack. 0.5.0 ships with the following modules.
+
+- [Substance.Document](http://github.com/substance/document) - A JSON-based document model, that can be customized
+- [Substance.Article](http://github.com/substance/article) - Reference implementation
+- [Substance.Operator](http://github.com/substance/operator) - Support for incremental changes using Operational Transformation
+- [Substance.Chronicle](http://github.com/substance/chronicle) A git-inspired versioning API optimized for digital content
+- [Substance.Surface](http://github.com/substance/surface) - A building block for displaying and editing documents
+- [Substance.Nodes](http://github.com/substance/nodes) - Common node type implementations such as `Paragraph`, `Heading`, `Image`.
 
 Please have a look at the official [Manual](#substance/manual) to learn more about the individual modules. For a general introduction see [here](#about).
+
+Limitations
+
+We're still owing you a stable rich text editor. We've got pretty far, but the editor is not yet stable enough to be part of the release.
+
 
 ## Substance IO
 
