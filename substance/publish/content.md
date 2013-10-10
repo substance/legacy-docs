@@ -1,6 +1,6 @@
 We'd like to invite you to publish guest articles on Substance.io. We'll create new collections on demand to categorize articles coming from the community.
 
-Substance.io is powered by our minimal publishing system, [IO](http://github.com/substance/io). It lets you write articles in Markdown and define figures, tables etc. in a simple JSON syntax. All that input is compiled into a full-fledged Substance Article including the main content, meta information like the title and authors and figures you have specified. It works similarly to [Jekyll](http://jekyllrb.com/), a static site generator written in Ruby. Compiled IO document repositories can be hosted on any webserver. It's just a bunch of static HTML + JSON files.
+Substance.io is powered by our minimal publishing system, [IO](http://github.com/substance/io). It lets you write articles in Markdown and define figures, tables etc. in a simple JSON syntax. All that input is compiled into a full-fledged Substance Article including the main content, meta information like the title and authors and figures you have specified. It works similarly to [Jekyll](http://jekyllrb.com/), a static site generator written in Ruby. Compiled IO document repositories can be hosted on any webserver. It's just a bunch of static [HTML + JSON](https://github.com/substance/io/tree/master/dist) files.
 
 ## Install IO
 
@@ -10,7 +10,7 @@ Installing IO locally is pretty easy using NPM.
 
 The proposed workflow for adding your own docs is [forking](https://help.github.com/articles/fork-a-repo) the [Substance Docs](http://github.com/substance/docs) repository and running IO against it.
 
-    $ git clone https://github.com/substance/docs.git
+    $ git clone https://github.com/your_user/docs.git
     $ cd docs
 
 Run IO.
@@ -26,7 +26,7 @@ Let's suppose you'd like to write an article about Javascript Inheritance. All y
 
 Let's add a new collection Javascript by just creating a folder `javascript` within the docs folder.
 
-Every collection requires to have have some meta-information attached, which are specified in an `index.json` file.
+Every collection requires to have some meta-information attached, which are specified in an `index.json` file.
 
     {
       "name": "Javascript",
@@ -36,7 +36,7 @@ Every collection requires to have have some meta-information attached, which are
       "description": "Javascript-related articles."
     }
 
-Now point your browser to `http://localhost:5000/#explore` and you should see the Javascript collection.
+Now point your browser to `http://localhost:5000/#explore` and you should see the new Javascript collection.
 
 ## Add a new document
 
