@@ -19,6 +19,15 @@ Run IO.
 
 And point your browser to `http://localhost:5000`
 
+If you want, you can point `io` to a different folder:
+
+    $ io <path-to-library-folder>
+
+To use a different port you would call:
+
+    $ PORT=5123 io
+
+
 ## Add a new collection
 
 Let's suppose you'd like to write an article about Javascript Inheritance. All you need is your favorite text editor.
