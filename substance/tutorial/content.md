@@ -1,4 +1,4 @@
-Welcome to the official Substance Tutorial. You'll learn:
+Welcome to the Substance Tutorial. You'll learn:
 
 1. How to [convert](convert) a Markdown file into a Substance Article
 2. [Display](display) Substance content in our interactive reader.
