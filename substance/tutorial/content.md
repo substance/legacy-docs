@@ -3,11 +3,8 @@ Welcome to the Substance Tutorial. You'll learn:
 1. How to [convert](convert) a Markdown file into a Substance Article
 2. [Display](display) Substance content in our interactive reader.
 3. Create a customized [renderer](renderer)
-4. [Submit](publish) a publication to Substance.io
 
 *The tutorial is at an early stage. We'd like to improve it over time and always keep it up to date with our latest API's. You can help us making this tutorial better by contributing to the source [Markdown file](https://github.com/substance/docs/blob/0.1.x/substance/tutorial/content.md) and also to the [example code](http://github.com/substance/tutorial).*
-
-
 
 
 Preparations
