@@ -16,31 +16,18 @@ Preparations
 Make sure you have the following software packages installed on your computer before starting over with the tutorial.
 
    - [Node.js](http://nodejs.org/) >=0.10.x
-   - [Pandoc](http://johnmacfarlane.net/pandoc/) >= 1.12.x
+   - [Pandoc](http://johnmacfarlane.net/pandoc/) >= 1.12.0.2
 
 Please clone the [Substance Tutorial](https://github.com/substance/tutorial) repo, which has the complete code for the examples.
 
     $ git clone https://github.com/substance/tutorial
-
-Throughout our tutorial we are using the [Substance Screwdriver](http://github.com/substance/screwdriver) for managing dependencies. The tutorial always runs against the latest stable dev versions. Please note that for all official releases we also provide [NPM](http://npmjs.org/) packages.
-  
-    $ git clone https://github.com/substance/screwdriver.git
-    $ cd screwdriver
-    $ sudo python setup.py install
-
-Now you should be able to run the `substance` program from the command line.
-
-    $ substance --help
-
-
-
 
 
 Turn a Markdown file into a Substance Article {#convert}
 =====================================================
 
 
-Here comes the first lesson. Let's suppose we have a markdown document `lorem_ipsum.md` that we'd like to turn into a [Substance.Article](http://github.com/substance/article). Substance ships with its own [converter](http://github.com/substance/converter) module, which makes use of Pandoc, a universal document conversion tool. Let's create a little node program that takes a Markdown file as an input, turns it into a Substance Article and stores the resulting JSON on disk.
+Here comes the first lesson. Let's suppose we have a markdown document `lorem_ipsum.md` that we'd like to turn into a [Substance.Article](http://github.com/substance/article). Substance ships with its own [converter](http://github.com/substance/converter) module, which makes use of Pandoc, a universal document conversion tool. Let's create a little node program that takes a Markdown file as an input, turns it into a Substance Article and stores the resulting JSON in a new file.
 
 ## Setup
 
@@ -48,13 +35,13 @@ With your console navigate to the first lesson.
 
     $ cd 001-convert-md-to-substance
 
-Pull-in dependencies using the Substance Screwdriver.
+Pull-in dependencies using NPM.
 
-$ substance --update
+$ npm install
 
 ## Procedure
 
-Now take a glance at the `convert.js` utility. That's all you need for a simple conversion tool, by just delegating the hard work to the Substance.Converter, and of course Pandoc.
+Now take a glance at the `convert.js` file. That's all you need for a simple conversion tool, by just delegating the hard work to the Substance.Converter, and of course Pandoc.
 
     var fs = require('fs');
     var Converter = require("substance-converter");
@@ -87,15 +74,13 @@ Call your node program, to finally perform the conversion.
     $ node convert.js lorem_ipsum.md lorem_ipsum.json
 
 
-Great. Now try the same with your very own Markdown document. If you don't get to convert your markdown file, please let us know in the [issue tracker](https://github.com/substance/converter/issues).
-
-
+Great. Now do the same with your very own Markdown document. If you don't get to convert your markdown file, please let us know in the [issue tracker](https://github.com/substance/converter/issues).
 
 
 Present your article {#display}
 =====================================================
 
-In collaboration with [eLife](http://elifesciences.org), we have developed an interactive reader for scientific documents which is based on the Substance Document Model, [eLife Lens](http://lens.substance.io). In this lesson we'll be displaying your freshly generated Substance Article using a customized build of eLife Lens, the Substance.Reader. 
+In collaboration with [eLife](http://elifesciences.org), we have developed an interactive reader for scientific documents which is based on the Substance Document Model, [eLife Lens](http://lens.substance.io). In this lesson we'll be displaying your freshly generated Substance Article using a customized build of eLife Lens, the [Substance.Reader](http://github.com/substance/reader).
 
 ## Setup
 
@@ -103,7 +88,7 @@ Navigate to lesson 2.
 
     $ cd 002-display-document
 
-The folder contains a stable build of the Substance.Reader. Since the document is loaded via AJAX, you just need to serve the folder through a webserver. The probably easiest way to do this is starting Python's SimpleHTTPServer, that ships with most operating systems.
+The folder contains a stable build of the `Substance.Reader`. Since the document is loaded via AJAX, you just need to serve the folder through a webserver. The probably easiest way to do this is starting Python's SimpleHTTPServer, that ships with most operating systems.
 
     $ python -m SimpleHTTPServer
 
@@ -117,8 +102,6 @@ Now store a copy of your Substance document in the data folder (e.g. `data/mydoc
       // Endpoint must have CORS enabled, or file is served from the same domain as the app
       document_url: "http://example.com/path/to/any-substance-doc.json"
     });
-
-
 
 
 
@@ -143,7 +126,7 @@ Again start our little Python server.
 
 ## Procedure
 
-Using the surface is really easy. The first thing to do is constructing a `Substance.Article` based on our JSON input.
+Using the Substance Surface is really easy. The first thing to do is constructing a `Substance.Article` based on our JSON input.
 
     var doc = Substance.Article.fromSnapshot(loremIpsumDoc);
 
