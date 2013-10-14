@@ -123,7 +123,7 @@ Again start our little Python server.
 
 ## Procedure
 
-Using the Substance Surface is really easy. The first thing to do is constructing a `Substance.Article` based on our JSON input.
+Using the Substance Surface is really easy. The first thing to do is constructing a `Substance.Article` based on our JSON input. Again, you need to adjust `index.html`:
 
     var doc = Substance.Article.fromSnapshot(loremIpsumDoc);
 
@@ -147,7 +147,7 @@ Let's wait until the DOM is ready and then render the document and attach it to 
 
 The markup that is produced by the Surface using the `Substance.Article` definition is pretty straight forward ([Figure 3](figure_3)). 
 
-You can easiliy come up with your very own CSS styles. For instance let's add some styles for headings.
+You can easiliy come up with your very own CSS styles. For instance let's add some styles for headings in `article.css`:
 
     .surface.content .content-node.heading {
       font-weight: bold;
@@ -158,7 +158,7 @@ You can easiliy come up with your very own CSS styles. For instance let's add so
       font-size: 25px;
     }
 
-A more complete functioning codebsae is located in the `index.html` file and `article.css`.
+A more complete functioning codebase is located in the `index.html` file and `article.css`.
 
 
 
