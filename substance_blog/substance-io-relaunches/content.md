@@ -29,7 +29,7 @@ A platform is only a platform if applications built on top of it. We are happy t
 
 ### eLife Lens
 
-![](http://backbonejs.org/docs/images/lens.png)
+![](http://f.cl.ly/items/3P013m1y270K0D0J0L3W/Image%202013.10.16%201%3A02%3A27%20AM.jpeg)
 
 In collaboration with Open Access publisher eLife we developed a new way to display scientific content, [eLife Lens](http://lens.substance.io). This tool is built on top of the Substance technology stack and has been successfully integrated by [eLife](http://lens.elifesciences.org/00311/) and  [Landes Bioscience](http://landesbioscience.com).
 

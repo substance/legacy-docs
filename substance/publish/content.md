@@ -109,3 +109,11 @@ Commit your changes using Git.
     $ git push origin 0.1.x
 
 Now that you pushed your changes to your fork, the last step is filing a [Pull Request](https://help.github.com/articles/using-pull-requests) on Github. We'll review your submitted article and put it live as soon as possible.
+
+## Bundle your document repository
+
+You can also bundle your own document repository using a simple command.
+
+    $ io-bundle <docs-dir> <bundle-dir>
+
+You just need to take the contents of your fresh `<bundle-dir>` and put it on a webserver. As you can imagine, you can use that workflow for simple blogging. Have fun!
