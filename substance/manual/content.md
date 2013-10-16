@@ -1,4 +1,4 @@
-*This documentation is a work-in-progress. However, it reflects the latest state of Substance development and provides information about most modules. You can contribute to this manual by making changes to the source [markdown file](https://github.com/substance/io/blob/master/docs/substance/manual/content.md).*
+*This documentation is a work-in-progress. However, it reflects the latest state of Substance development and provides information about most modules. You can contribute to this manual by making changes to the source [markdown file](https://github.com/substance/docs/blob/master/substance/manual/content.md).*
 
 # Introduction
 

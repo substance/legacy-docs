@@ -48,7 +48,7 @@ Behind the scenes the Substance is mainly composed by a stack of open source mod
 
 We are collaborating with Open Access publishers and have implemented a new way to display scientific content, eLife Lens. This tool is built on top of the Substance technology stack and has been successfully integrated by  eLife and Landes Bioscience.
 
-![](http://backbonejs.org/docs/images/lens.png)
+![](http://f.cl.ly/items/3P013m1y270K0D0J0L3W/Image%202013.10.16%201%3A02%3A27%20AM.jpeg)
 
 # Work with us
 
