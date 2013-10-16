@@ -4,6 +4,11 @@ Substance.io is powered by our minimal publishing system, [IO](http://github.com
 
 ## Install IO
 
+Prerequisites:
+
+- Node.js >=0.10.x
+- [Pandoc](http://johnmacfarlane.net/pandoc/installing.html) >= 1.12.x (for on-the-fly generation of documents using Markdown as an input)
+
 Installing IO locally is pretty easy using NPM.
 
     $ npm install substance-io -g
