@@ -40,7 +40,7 @@ There's no one size fits it all solution. Hence we defined a simple plugin syste
 
 ## Open Source
 
-Behind the scenes the Substance is mainly composed by a stack of open source modules that will be publicly released under the Open Source MIT license.
+Behind the scenes Substance is mainly composed by a stack of open source modules that will be publicly released under the Open Source MIT license.
 
 # Substance in the wild
 
