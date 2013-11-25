@@ -1,8 +1,7 @@
-It's about time for an update on the state of Substance development. Earlier this year we were awarded with the [Shuttleworth Flash Grant](#blog/shuttleworth-grant).
+It's about time for an update on the state of Substance development. Earlier this year we were awarded with the [Shuttleworth Flash Grant](#blog/shuttleworth-grant). It allowed us to invest more dedicated time into modularization and making our [core API's](#blog/substance-io-relaunches) stable. 
 
 ![](http://f.cl.ly/items/3b1G0i0t0O452C0b0c30/shuttleworth-1.jpg)
 
-It allowed us to invest more dedicated time into modularization and making our [core API's](#blog/substance-io-relaunches) stable. 
 
 # Evolving our Mission
 
