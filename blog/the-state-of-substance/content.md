@@ -46,7 +46,7 @@ The Substance Converter lets you turn existing content into a Substance Article.
 
 ## Substance as a business
 
-Together with [Oliver Buchtala](http://github.com/oliver----), a very good friend of mine, we'll be starting the Substance Software GmbH with the beginning of the new year. We'll offer consulting in the context of digital publishing, and in the long run commercial licenses for higher level open source modules and products.
+Together with [Oliver Buchtala](http://github.com/oliver----), a very good friend of mine, we'll be starting the Substance Software GmbH with the beginning of the new year. We'll offer consulting in the context of digital publishing and in the long run commercial licenses for higher level open source modules and products.
 
 Behind this formation is our dedication to work on Substance full-time. We'll keep the open source spirit but also ensure that our work is backed by a sustainable business model.
 
