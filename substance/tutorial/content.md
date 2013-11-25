@@ -34,7 +34,7 @@ With your console navigate to the first lesson.
 
 Pull-in dependencies using NPM.
 
-$ npm install
+    $ npm install
 
 ## Procedure
 
