@@ -52,7 +52,7 @@ Behind this formation is our dedication to work on Substance full-time. We'll ke
 
 ## The Substance Composer
 
-Now that we have a set of reliable building blocks we're switching back gears to developing our full-fledged editing solution. The **Substance Composer** will ship next summer as a native application for all major operating systems in a fully functional beta version.
+Now that we have a set of reliable building blocks we're switching back gears to developing our full-fledged editing solution. The all-new **Substance Composer** (Play with the old experimental version [here](http://hub.substance.io/)) will ship next summer as a native application for all major operating systems in a fully functional beta version.
 
 ![](http://f.cl.ly/items/3H2l2h3B0Y273S2e2M2V/Screen%20Shot%202013-11-25%20at%2017.29.24.png)
 
