@@ -33,7 +33,7 @@ Substance Document makes developing web-based viewers and editors much easier, b
 
 ## The Substance Article
 
-The Substance Article serves as a reference implementation for Substance-based document formats. In the current version there is support for most common content types, such as paragraphs, headings, images, lists and tables. It provides a document manipulation API for Javascript as well as view compontents and default styles, individually for each content type. With [Substance.Nodes](github.com/substance/nodes) we are a providing a common set of reusable content types, which can be easily adapted by users.
+The Substance Article serves as a reference implementation for Substance-based document formats. In the current version there is support for most common content types, such as paragraphs, headings, images, lists and tables. It provides a document manipulation API for Javascript as well as view compontents and default styles, individually for each content type. With [Substance Nodes](http://github.com/substance/nodes) we are a providing a common set of reusable content types, which can be easily adapted by users.
 
 One example is the [Lens Document Format](http://lens.substance.io/#lens/lens_article), which adds support for domain specific content, such as rich figures, citations and supplemental materials.
 
