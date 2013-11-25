@@ -5,7 +5,7 @@ It's about time for an update on the state of Substance development. Earlier thi
 
 # Evolving our Mission
 
-It's been three years since I started Substance as an effort to build a semantic editing environment for the browser. Since then the idea evolved and I realized that the concept of strictly separating *content* from *presentation* could have a huge impact in many fields where digital content plays an important role (science, education, journalism, open government, etc.).
+It's been three years since I started Substance as an effort to build a semantic editing environment for the browser. Since then the idea evolved and I realized that the concept of strictly separating *content* from *presentation* could have a huge impact in many fields where digital content comes into play (science, education, journalism, open government, etc.).
 
 With Substance we want to realize broader acceptance of *digital content* in general. By deeply integrating *annotations* and *comments* into authoring and reading environments we want to implement a natural way of human collaboration that is supported, not dictated, by software. There are not only technical aspects (consistency, versioning, replication) that require our attention. We want to complement our low-level technology stack with a set of carefully crafted highly functional user interface components for editing and contribution management.
 
