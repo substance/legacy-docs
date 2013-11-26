@@ -1,4 +1,4 @@
-This documentation is a work-in-progress. However, it reflects the latest state of Lens development and provides documentation for the new [0.2.x](https://github.com/elifesciences/lens/tree/0.2.x) series of Lens. You can contribute to this manual by making changes to the source [markdown file](https://github.com/elifesciences/lens-manual/blob/master/manual.md).
+This documentation is a work-in-progress. However, it reflects the latest state of Lens development. You can contribute to this manual by making changes to the source [markdown file](https://github.com/substance/docs/blob/master/substance/manual/content.md).
 
 # Introduction
 
@@ -21,7 +21,6 @@ We believe so for the following reasons:
 
 - XML-based formats such as NLM are hard to consume by web clients.
 - Strict separation of content and style is important. Existing formats target print, and thus contain style information which makes them hard to process by computer programs.
-- The greatest advantage of Lens Articles is that any of them can be viewed in Lens, a modern web-based interface for consuming science content.
 
 
 ### Nodes
