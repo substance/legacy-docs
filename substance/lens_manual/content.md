@@ -1,8 +1,8 @@
-This documentation is a work-in-progress. However, it reflects the latest state of Lens development. You can contribute to this manual by making changes to the source [markdown file](https://github.com/substance/docs/blob/master/substance/manual/content.md).
+This documentation is a work-in-progress. However, it reflects the latest state of Lens development. You can contribute to this manual by making changes to the source [markdown file](https://github.com/substance/docs/blob/master/substance/lens_manual/content.md).
 
 # Introduction
 
-[eLife Lens](http://elifesciences.org/lens) provides a novel way of looking at content on the web. It is designed to make life easier for researchers, reviewers, authors and readers. For example, have you tried to look at a figure in an online article, while at the same time trying to see what the author says about the figure? You end up jumping all around the article, losing track of what you were looking for in the first place. The reason for this is that most online research articles are published in a fixed digital version of the original paper. With eLife Lens, we take full advantage of the Internet’s flexibility.
+[eLife Lens](http://lens.elifesciences.org) provides a novel way of looking at content on the web. It is designed to make life easier for researchers, reviewers, authors and readers. For example, have you tried to look at a figure in an online article, while at the same time trying to see what the author says about the figure? You end up jumping all around the article, losing track of what you were looking for in the first place. The reason for this is that most online research articles are published in a fixed digital version of the original paper. With eLife Lens, we take full advantage of the Internet’s flexibility.
 
 ## The Big Picture
 
@@ -13,7 +13,7 @@ can be embedded into any web page. Lens can display any NLM XML document or, alt
 
 The Lens Article Format is an implementation of the [Substance Document Model](http://github.com/substance/document), dedicated to scientific content. It features basic content types such as paragraphs and headings, as well as figure types such as images, tables and videos complete with captions and cross-references.
 
-The document definitions can easily be extended. You can either create your own flavour or contribute to the Lens Article Format directly. We have auto-generated documentation for the latest [Lens Article spec](#lens/lens_article).
+The document definitions can easily be extended. You can either create your own flavour or contribute to the Lens Article Format directly. We have auto-generated documentation for the latest [Lens Article spec](http://lens.elifesciences.org/lens_article/).
 
 Do we really need another spec for scientific documents?  
 
@@ -53,17 +53,20 @@ Conversion is done on the client side using the browser-native [DOM Parser](http
     });
 
 
-The converter can handle any NLM-compatible file. Some portions are publisher-specific, such as when resolving the urls for figures and videos. This is done in configurations. We have implemented configurations for [eLife](https://github.com/elifesciences/lens-converter/blob/0.1.x/src/configurations/elife.js), [Landes Bioscience](https://github.com/elifesciences/lens-converter/blob/0.1.x/src/configurations/landes.js) and [PLOS](https://github.com/elifesciences/lens-converter/blob/0.1.x/src/configurations/plos.js).
+The converter can handle any NLM-compatible file. Some portions are publisher-specific, such as when resolving the urls for figures and videos. This is done in configurations. We have implemented configurations for [eLife](https://github.com/elifesciences/lens-converter/blob/0.3.x/src/configurations/elife.js), [Landes Bioscience](https://github.com/elifesciences/lens-converter/blob/0.3.x/src/configurations/landes.js) and [PLOS](https://github.com/elifesciences/lens-converter/blob/0.3.x/src/configurations/plos.js).
 
 # Website Integration
 
 The easiest way to integrate Lens into your website is by creating one HTML file per document and adapting the url to the document you want to display.
 
-Just take the contents from the [bundled distribution](https://github.com/elifesciences/lens-elife/archive/gh-pages.zip) here, then adjust the `document_url` parameter in `index.html`.
 
+Just take the contents from the [bundled distribution](https://github.com/elifesciences/lens-elife/archive/gh-pages.zip) here, then adjust the `document_url` parameter in `index.html`.
+    
+    // Endpoint must have CORS enabled, or file is served from the same domain as the app
+    var documentURL = "https://s3.amazonaws.com/elife-cdn/elife-articles/00778/elife00778.xml";
+    
     var app = new Lens({
-      // Endpoint must have CORS enabled, or file is served from the same domain as the app
-      document_url: "https://s3.amazonaws.com/elife-cdn/elife-articles/00778/elife00778.xml"
+      document_url: documentURL
     });
 
 Keep in mind, with eLife Lens you can display any NLM-compatible XML file or JSON document that conforms to the Lens Article spec. You can enrich your HTML file with `<meta>` tags etc. to ensure Google crawlablility. There is no server infrastructure needed to run Lens. It's 100% browser-based. If you have questions, please consult the [Lens Mailinglist](https://groups.google.com/forum/#!forum/elife-lens).
@@ -75,7 +78,7 @@ It's fairly easy to install and run the latest Lens development environment loca
 ## Prerequisites
 
 - Node.js >=0.8.x
-- [Pandoc](http://johnmacfarlane.net/pandoc/installing.html) >= 1.12.02 (for on-the-fly generation of the Lens manual from Markdown)
+- [Pandoc](http://johnmacfarlane.net/pandoc/installing.html) >= 1.12.1 (for on-the-fly generation of the Lens manual from Markdown)
 
 Node.js is just used as a development environment. You'll soon be able to create self-contained packages of individual modules or the main app itself.
 
@@ -87,9 +90,9 @@ First install the Substance Screwdriver command line utility. It's just a little
     $ cd screwdriver
     $ sudo python setup.py install
 
-Clone the Lens Mothership
+Clone the Lens repository
 
-    $ git clone https://github.com/elifesciences/lens-sandbox.git
+    $ git clone https://github.com/elifesciences/lens.git
   
 Run the update command, which pulls in all the sub-modules and dependencies
 
@@ -100,7 +103,7 @@ Finally start the server
 
     $ substance
 
-You can have a look at the example document by pointing your browser to `http://localhost:4000/#lens/lorem_ipsum`, view the autogenerated Lens.Article documentation here `http://localhost:4000/#lens/lens_article` or the manual `http://localhost:4000/#lens/manual`.
+You can have a look at the example document by pointing your browser to `http://localhost:4001`.
    
 ## Keep your local version in sync
 
@@ -112,17 +115,40 @@ And start the dev environment again.
 
     $ substance
 
-## Configuration
 
-By default your local Lens installation serves a bunch of example documents plus Lens-related documents. However you can easily configure Lens so that it fetches content from a different source by adapting `config/config.json` to your needs.
+# Bundling
 
+You can easily create a bundle (JS+CSS) of the source files by utilizing the Substance Screwdriver.
+
+    $ substance --bundle
+    
+If run successfully you can find your bundled Lens in the `dist` folder.
 
 # Contributing
 
-I'm assuming here that you have push access to the repositories, because as a start I'd like to get the Lens core dev team up and running. I'll provide documentation on how to work with a forked version of a module and submit a pull request soon.
+<!-- I'm assuming here that you have push access to the repositories, because as a start I'd like to get the Lens core dev team up and running. I'll provide documentation on how to work with a forked version of a module and submit a pull request soon. -->
 
 
-Say you've made changes to the Lens.Article module. In order to commit them you simply have to navigate to `node_modules/lens-article` and do:
+The first thing to do is creating a fork of the lens repository and all modules you'd like to make changes for. Then update the `project.json` file in your main repo accordingly. Assume you want to make updates to the Lens Article module you'd have to update the following entries:
+
+
+
+    "modules": [
+    ... 
+    {
+      "repository": "https://github.com/your_user/lens-converter.git",
+      "folder": "node_modules/lens-converter",
+      "branch": "0.3.x"
+    },
+    ... 
+    {
+      "repository": "https://github.com/your_user/lens.git",
+      "folder": ".",
+      "branch": "1.0.x"
+    }
+
+
+Now say you've made changes to the Lens.Article module. In order to commit them you simply have to navigate to `node_modules/lens-article` and do:
 
     $ git add <YOUR STUFF>
     $ git commit -m "Fixed X"
