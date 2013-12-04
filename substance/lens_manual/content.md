@@ -59,7 +59,6 @@ The converter can handle any NLM-compatible file. Some portions are publisher-sp
 
 The easiest way to integrate Lens into your website is by creating one HTML file per document and adapting the url to the document you want to display.
 
-
 Just take the contents from the [bundled distribution](https://github.com/elifesciences/lens-elife/archive/gh-pages.zip) here, then adjust the `document_url` parameter in `index.html`.
     
     // Endpoint must have CORS enabled, or file is served from the same domain as the app
@@ -82,7 +81,7 @@ It's fairly easy to install and run the latest Lens development environment loca
 
 Node.js is just used as a development environment. You'll soon be able to create self-contained packages of individual modules or the main app itself.
 
-## Fresh install
+## Fresh install of dev environment
 
 First install the Substance Screwdriver command line utility. It's just a little helper that makes dealing with our many modules easier.
 
@@ -129,23 +128,38 @@ If run successfully you can find your bundled Lens in the `dist` folder.
 <!-- I'm assuming here that you have push access to the repositories, because as a start I'd like to get the Lens core dev team up and running. I'll provide documentation on how to work with a forked version of a module and submit a pull request soon. -->
 
 
-The first thing to do is creating a fork of the lens repository and all modules you'd like to make changes for. Then update the `project.json` file in your main repo accordingly. Assume you want to make updates to the Lens Article module you'd have to update the following entries:
+The first thing to do is creating a fork of the lens repository and all modules you'd like to make changes for. Make a fresh clone of your forked Lens.
+
+    $ git clone https://github.com/your_user/lens.git
+
+
+Then update the `project.json` file in your main repo accordingly. Assume you want to make updates to the Lens Article module you'd have to update the following entries:
 
 
 
     "modules": [
-    ... 
-    {
-      "repository": "https://github.com/your_user/lens-converter.git",
-      "folder": "node_modules/lens-converter",
-      "branch": "0.3.x"
-    },
-    ... 
-    {
-      "repository": "https://github.com/your_user/lens.git",
-      "folder": ".",
-      "branch": "1.0.x"
-    }
+      ... 
+      {
+        "repository": "https://github.com/your_user/lens-converter.git",
+        "folder": "node_modules/lens-converter",
+        "branch": "0.3.x"
+      },
+      ... 
+      {
+        "repository": "https://github.com/your_user/lens.git",
+        "folder": ".",
+        "branch": "1.0.x"
+      }
+    ]
+
+
+Finally, pull in all the modules.
+
+    $ substance --update
+    
+And run the Lens dev environment
+
+
 
 
 Now say you've made changes to the Lens.Article module. In order to commit them you simply have to navigate to `node_modules/lens-article` and do:
@@ -154,19 +168,7 @@ Now say you've made changes to the Lens.Article module. In order to commit them 
     $ git commit -m "Fixed X"
     $ git push
    
-Alternatively, if you are working on breaking changes you can switch to a different branch, and submit a pull request using the Github interface. Here's how:
-
-    $ git checkout -b my_feature_branch
-    $ git add <YOUR STUFF>
-    $ git commit -m "Fixed X"
-    $ git push
-
 Then go to [Github](http://github.com) and submit a pull request.
-
-
-Another hint: To pull in upstream changes from master for the entire project do this:
-
-    $ substance --git -- pull origin master:<feature_branch_name>
 
 
 ## Adjusting styles
