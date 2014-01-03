@@ -6,18 +6,18 @@
     {
       "role": "author",
       "name": "Michael Aufreiter",
-      "email": "ma@zive.at",
-      "organization": "Quasipartikel",
+      "email": "michael@substance.io",
+      "organization": "Substance Software GmbH",
       "contribution": "Initial version of the manual.",
-      "image": "https://2.gravatar.com/avatar/d5a959d7e57daa5433fcb9f8da40be4b?d=https%3A%2F%2Fidenticons.github.com%2F86c4ad52768c511046fea7b2d42b300c.png&s=420"
+      "image": "http://about.substance.io/images/michael_avatar.jpg"
     },
     {
       "role": "author",
       "name": "Oliver Buchtala",
-      "email": "oliver.buchtala@gmail.com",
-      "organization": "Quasipartikel",
+      "email": "oliver@substance.io",
+      "organization": "Substance Software GmbH",
       "contribution": "Documentation for Operator / Chronicle / Data.",
-      "image": "http://interior.substance.io/assets/images/team/oliver.png"
+      "image": "http://about.substance.io/images/oliver_avatar.jpg"
     }
   ]
 }
