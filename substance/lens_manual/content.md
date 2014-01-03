@@ -17,7 +17,7 @@ The document definitions can easily be extended. You can either create your own 
 
 Do we really need another spec for scientific documents?  
 
-We believe so for the following reasons:
+Yes, we believe so for the following reasons:
 
 - XML-based formats such as NLM are hard to consume by web clients.
 - Strict separation of content and style is important. Existing formats target print, and thus contain style information which makes them hard to process by computer programs.
@@ -59,7 +59,7 @@ The converter can handle any NLM-compatible file. Some portions are publisher-sp
 
 The easiest way to integrate Lens into your website is by creating one HTML file per document and adapting the url to the document you want to display.
 
-Just take the contents from the [bundled distribution](https://github.com/elifesciences/lens-elife/archive/gh-pages.zip) here, then adjust the `document_url` parameter in `index.html`.
+Just take the contents from the [bundled distribution](http://lens.elifesciences.org/lens-1.0.0.zip) here, then adjust the `document_url` parameter in `index.html`.
     
     // Endpoint must have CORS enabled, or file is served from the same domain as the app
     var documentURL = "https://s3.amazonaws.com/elife-cdn/elife-articles/00778/elife00778.xml";
@@ -68,7 +68,7 @@ Just take the contents from the [bundled distribution](https://github.com/elifes
       document_url: documentURL
     });
 
-Keep in mind, with eLife Lens you can display any NLM-compatible XML file or JSON document that conforms to the Lens Article spec. You can enrich your HTML file with `<meta>` tags etc. to ensure Google crawlablility. There is no server infrastructure needed to run Lens. It's 100% browser-based. If you have questions, please consult the [Lens Mailinglist](https://groups.google.com/forum/#!forum/elife-lens).
+Keep in mind, with eLife Lens you can display any NLM-compatible XML file or JSON document that conforms to the Lens Article spec. You can enrich your HTML file with `<meta>` tags etc. to ensure Google crawlablility. There is no server infrastructure needed to run Lens, as it is 100% browser-based. If you have questions, please consult the [Lens Mailinglist](https://groups.google.com/forum/#!forum/elife-lens).
 
 # Development Setup
 
