@@ -127,7 +127,7 @@ Using the Substance Surface is really easy. The first thing to do is constructin
 
     var doc = Substance.Article.fromSnapshot(loremIpsumDoc);
 
-A Substance document stores multiple views on its content ([Figure 2](figure_2)). In our case we're interested in the `content` view. Therefore we create a `Document.Controller` instance that we need to paramatrize the `Surface`.
+A Substance document stores multiple views on its content ([Figure 2](figure_2)). In our case we're interested in the `content` view. Therefore we create a `Document.Controller` instance that we need to parametrize the `Surface`.
 
     var docCtrl = new Substance.Document.Controller(doc, {
       view: "content"
@@ -147,7 +147,7 @@ Let's wait until the DOM is ready and then render the document and attach it to 
 
 The markup that is produced by the Surface using the `Substance.Article` definition is pretty straight forward ([Figure 3](figure_3)). 
 
-You can easiliy come up with your very own CSS styles. For instance let's add some styles for headings in `article.css`:
+You can easily come up with your very own CSS styles. For instance let's add some styles for headings in `article.css`:
 
     .surface.content .content-node.heading {
       font-weight: bold;
