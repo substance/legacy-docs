@@ -15,11 +15,11 @@ Its features include:
 - A plugin system for customized content types (Substance.Nodes)
 
 
-Substance is a work-in-progress by design. We'd like avoid the lock-in phenomenon and design a system that can deal with the ever-changing needs of its users. We don't propose a one-size fits it all solution. Instead we'd like to encourage you to take the pieces you need and build your very own publishing system. We're glady reviewing your adaptions and include them in the core system when it makes sense.
+Substance is a work-in-progress by design. We'd like to avoid the lock-in phenomenon and design a system that can deal with the ever-changing needs of its users. We don't propose a one-size fits it all solution. Instead we'd like to encourage you to take the pieces you need and build your very own publishing system. We're glady reviewing your adaptions and include them in the core system when it makes sense.
 
 # Modules
 
-Substance modules can be used independenly. You can install them using NPM or use the [Substance Screwdriver](http://github.com/substance/screwdriver).
+Substance modules can be used independently. You can install them using NPM or use the [Substance Screwdriver](http://github.com/substance/screwdriver).
 
     npm install <module-name>
 
@@ -111,7 +111,7 @@ To get an overview of the full API please have a look at our commented [testsuit
 
 **Substance Document** is an open standard for manipulating structured digital documents. It ensures consistency, separates content from presentation and provides an easy to use API. It depicts the heart of the Substance platform and serves as an interface for custom document models.
 
-A Substance Document can range from loosly structured content involving headings and text, such as reports or articles to more complex things that you wouldn’t consider a traditional document anymore. The format is designed to be extensible, so you can create your own flavors of documents. We put a lot of thought into the design of this module. It is the result of three years of research and development.
+A Substance Document can range from loosely structured content involving headings and text, such as reports or articles to more complex things that you wouldn’t consider a traditional document anymore. The format is designed to be extensible, so you can create your own flavors of documents. We put a lot of thought into the design of this module. It is the result of three years of research and development.
 
 
 ### Design Goals
@@ -229,7 +229,7 @@ Unlike in other systems with Substance annotations are not part of the content i
 
     <em>Emphasized term</em> in a text body.
 
-In Substance however, we keep annotations external and remember the position of the first character, as well as an offset (how many characters are effected). An annotation emphasizing the "Hey" in "Hey there." looks like so:
+In Substance however, we keep annotations external and remember the position of the first character, as well as an offset (how many characters are affected). An annotation emphasizing the "Hey" in "Hey there." looks like so:
 
 
 Here's how you create an annotation.
@@ -316,7 +316,7 @@ Substance.Chronicle allows to view versions and resolve more complex version dev
 
 ### Getting Really Started
 
-Substance.Chronicle can be considered a low-level API. Some integration and glueing is necessary to get things moving.
+Substance.Chronicle can be considered a low-level API. Some integration and gluing is necessary to get things moving.
 
 Installation is easy.
 
