@@ -1,0 +1,767 @@
+{
+  "id": "9a73f3d971b71adad01f2816bd8ba320",
+  "schema": [
+    "substance-article",
+    "0.4.0"
+  ],
+  "nodes": {
+    "document": {
+      "id": "document",
+      "type": "document",
+      "views": [
+        "content",
+        "figures",
+        "citations"
+      ],
+      "license": "licence",
+      "guid": "9a73f3d971b71adad01f2816bd8ba320",
+      "creator": "",
+      "title": "The Ugly Duckling",
+      "authors": [
+        "contributor_b29be4833e6914cc86371e45eb047448"
+      ],
+      "abstract": "",
+      "created_at": "2014-04-02T13:05:18.053Z",
+      "updated_at": "2014-04-12T17:46:25.670Z",
+      "published_on": "1843-11-11T00:00:00.000Z"
+    },
+    "cover": {
+      "id": "cover",
+      "type": "cover",
+      "authors": []
+    },
+    "content": {
+      "type": "view",
+      "id": "content",
+      "nodes": [
+        "cover",
+        "text1",
+        "f7cbcfabff6fc5209edecae2d406ddb7",
+        "728ad6d0c0ad57c35497d5ec76a7d7ea",
+        "ff78b491ec71a35f19dc8d03bd487792",
+        "c69b34500d8e0302db8d26e9f15ec50b",
+        "d79202dbcb51e819c40d34bbc900e7cf",
+        "6107c66084e8c0979f63bc174f45babe",
+        "10155eaf93ea69f2a38bb37120c14228",
+        "a3e32be9cd410083ba40f34cf15f7cdb",
+        "figure_ee3e9a915b53909b47bf4db43560bb93",
+        "12de3c96b204a4e297192ea140592114",
+        "dcee7a7f4011704106091672d92cb081",
+        "647aff48d895f33123691cd951fac717",
+        "4ae145f6fd30b0c5793dc96d28759598",
+        "34f4beee8b6917a4761c09d257686e92",
+        "9edb6da8c43ed84e204b6acff1aafb43",
+        "641d36bb2e2a5bf0f5a1fdcbba914093",
+        "a2c71f3d2874abccaca92c8a6ea7899a",
+        "a7a1fc79083190527fb50e535a12aee7",
+        "8419aba9d1466eede773499db00270c0",
+        "figure_1a59a7929d29b6e5c0943f9704a83d04",
+        "5cf564b1ccbedfce7cf76cd302264805",
+        "6dd54ccf45a30c653dc31d4d80424b1d",
+        "253bcffaf973ee5f9f31e10cac76b20d",
+        "0db15c90f465c428e8acb12d3365c70b",
+        "figure_3cfdd8cdf54ed820e3e3e9470a078c3b",
+        "98b9be0a42d7185d45914d74b2cf60df",
+        "74078e4b50f897e8ca3913ce224bbfec",
+        "186bd98b7f0205aba23b6a6292413ef9",
+        "ce7fe92fbc413ca65f10fd03fe79e0f1",
+        "0ecaf205b704a43574448392ad061a98",
+        "90b4cbd836318010a865b6fd0f44a162",
+        "142cb7662beeab04b61e269f558f1a02",
+        "aa1d7a9fc727a075cd6ee9ecc55a1e92",
+        "66e63c04af5708015e538f166361f50b",
+        "18378639363aa7f9fe798ada1eb5a6fa",
+        "e65e9d9ced82cb8ab506fa204b4d1645",
+        "f0fad34560ded33cd42e4b8e9fa569fd",
+        "e9e3dcd705df61c21ecb023d45989dd8",
+        "5917c810c3b0dd70161d34f35c251abb",
+        "34f934941492f824b8ad7b25c4673d2d",
+        "e7230754950dafbe6cce20ee49bcfaa8",
+        "89032bebf6faf527f3d8b7f1d5c1449c",
+        "7d5e3d47e9b8013af06c2a1ce7964889",
+        "37fac1a3ec2845e4b4e51103b4245246",
+        "3eaa45bc55f6905672790600a3724329",
+        "565130ab5d8742ffa6b05dda83841355",
+        "813ccba673e2bdc68455041766288166",
+        "5907aa5df27af7aa59ec22bb0a1c4dc6",
+        "555db83145e8659aed5c2d826043293c",
+        "99303615ec58f35ddb843b987e4536d3",
+        "10fdb6eac8d97a33361f053834d1e4d0",
+        "9e4ed6e21fa23fd02a6eb70232cfae8a",
+        "76d33c7d2a7ec4bf52db1f9ffaeba366",
+        "c00ac725aecb7829f740d57c446bd442",
+        "626bf5f62586f11434f027d21e3b9f95",
+        "de0e77d1ccf55ed5a08bdc804620ed58",
+        "113812e7c6de748dc3f4018d00c7d17d",
+        "91e2e5dd6f7be21ccb056e1d47385207",
+        "67e892cb49a206cefdde8470772c311c",
+        "figure_91e8126e1a703c11be226ba1bb394d0b",
+        "b00ed1912c32b4402cef127e898c2f5f",
+        "45900431f0b3bf261ecc4fafa6c96623",
+        "ad5f1ecc9d58493357a2d9edca4b726e",
+        "2497e35270245d1c064460a89c38ba47",
+        "0d617023dc486b5fa3825b68e8a6baba",
+        "b26e224860bff95e34a5164d8ed46fd9",
+        "figure_30e59bba315c73f128f1d27894f66061",
+        "8c9beb9d96fa69b140b070f6b2b57d28",
+        "829db210c709740169341404b1c300dd",
+        "556df677eb6accf2161b49041593146a",
+        "ed385ffc927e50b52f6a5e416a4691ac",
+        "b000bd4b9f3f2d5c84f4f2c64209fde8",
+        "figure_c1cedf6092746d5e57e80dc68345e8e2",
+        "3175dda73381f63c7207aae754e5788f"
+      ]
+    },
+    "figures": {
+      "type": "view",
+      "id": "figures",
+      "nodes": []
+    },
+    "citations": {
+      "type": "view",
+      "id": "citations",
+      "nodes": [
+        "web_resource_30d2008da215e7ef5205d4c9a55219e8"
+      ]
+    },
+    "remarks": {
+      "type": "view",
+      "id": "remarks",
+      "nodes": []
+    },
+    "errors": {
+      "type": "view",
+      "id": "errors",
+      "nodes": []
+    },
+    "info": {
+      "type": "view",
+      "id": "info",
+      "nodes": [
+        "publication_info",
+        "contributor_b29be4833e6914cc86371e45eb047448"
+      ]
+    },
+    "text1": {
+      "type": "text",
+      "id": "text1",
+      "content": "It was beautiful in the country. It was summertime. The wheat was yellow, the oats were green, the hay was stacked up in the green meadows, and the stork paraded about on his long red legs, talking in Egyptian, which language he had learnt from his mother."
+    },
+    "publication_info": {
+      "type": "publication_info"
+    },
+    "undefined": {
+      "type": "publication_info"
+    },
+    "contributor_b29be4833e6914cc86371e45eb047448": {
+      "type": "contributor",
+      "id": "contributor_b29be4833e6914cc86371e45eb047448",
+      "source_id": "",
+      "name": "Hans Christian Andersen",
+      "role": "author",
+      "description": "Hans Christian Andersen (Danish: [ˈhanˀs ˈkʁæsdjan ˈɑnɐsn̩]; often referred to in Scandinavia as H. C. Andersen; April 2, 1805 – August 4, 1875) was a Danish author and poet. Although a prolific writer of plays, travelogues, novels, and poems, Andersen is best remembered for his fairy tales. (Source: Wikipedia)",
+      "image": "contributor_b29be4833e6914cc86371e45eb047448.png",
+      "image_url": "",
+      "email": "john@doe.com",
+      "contribution": ""
+    },
+    "f7cbcfabff6fc5209edecae2d406ddb7": {
+      "type": "text",
+      "id": "f7cbcfabff6fc5209edecae2d406ddb7",
+      "source_id": "",
+      "content": "The fields and meadows were skirted by thick woods, and a deep lake lay in the midst of the woods. Yes; it was indeed beautiful in the country! The sunshine fell warmly on an old mansion, surrounded by deep canals, and from the walls down to the water's edge there grew large burdock leaves, so high that children could stand upright among them without being seen."
+    },
+    "728ad6d0c0ad57c35497d5ec76a7d7ea": {
+      "type": "text",
+      "id": "728ad6d0c0ad57c35497d5ec76a7d7ea",
+      "source_id": "",
+      "content": "This place was as wild as the thickest part of the wood, and on that account a Duck had chosen to make her nest there. She was sitting on her eggs; but the pleasure she had felt at first was now almost gone, because she had been there so long, and had so few visitors, for the other Ducks preferred swimming on the canals to sitting among the burdock leaves gossiping with her."
+    },
+    "ff78b491ec71a35f19dc8d03bd487792": {
+      "type": "text",
+      "id": "ff78b491ec71a35f19dc8d03bd487792",
+      "source_id": "",
+      "content": "At last the eggs cracked one after another, \"Chick, chick!\" All the eggs were alive, and one little head after another peered forth. \"Quack, quack!\" said the Duck, and all got up as well as they could. They peeped about from under the green leaves; and as green is good for the eyes, their mother let them look as long as they pleased."
+    },
+    "c69b34500d8e0302db8d26e9f15ec50b": {
+      "type": "text",
+      "id": "c69b34500d8e0302db8d26e9f15ec50b",
+      "source_id": "",
+      "content": "\"How large the world is!\" said the little ones, for they found their new abode very different from their former narrow one in the egg-shells."
+    },
+    "d79202dbcb51e819c40d34bbc900e7cf": {
+      "type": "text",
+      "id": "d79202dbcb51e819c40d34bbc900e7cf",
+      "source_id": "",
+      "content": "\"Do you imagine this to be the whole of the world?\" said the mother. \"It extends far beyond the other side of the garden in the pastor's field; but I have never been there. Are you all here?\" And then she got up. \"No, not all, for the largest egg is still here. How long will this last? I am so weary of it!\" And then she sat down again."
+    },
+    "6107c66084e8c0979f63bc174f45babe": {
+      "type": "text",
+      "id": "6107c66084e8c0979f63bc174f45babe",
+      "source_id": "",
+      "content": "\"Well, and how are you getting on?\" asked an old Duck, who had come to pay her a visit."
+    },
+    "10155eaf93ea69f2a38bb37120c14228": {
+      "type": "text",
+      "id": "10155eaf93ea69f2a38bb37120c14228",
+      "source_id": "",
+      "content": "\"This one egg keeps me so long,\" said the mother. \"It will not break. But you should see the others! They are the prettiest little Ducklings I have seen in all my days. They are all like their father—the good-for-nothing fellow, he has not been to visit me once!\""
+    },
+    "a3e32be9cd410083ba40f34cf15f7cdb": {
+      "type": "text",
+      "id": "a3e32be9cd410083ba40f34cf15f7cdb",
+      "source_id": "",
+      "content": "\"Let me see the egg that will not break,\" said the old Duck. \"Depend upon it, it is a turkey's egg. I was cheated in the same way once myself, and I had such trouble with the young ones; for they were afraid of the water, and I could not get them there. I called and scolded, but it was all of no use. But let me see the egg—ah, yes! to be sure, that is a turkey's egg. Leave it, and teach the other little ones to swim.\""
+    },
+    "12de3c96b204a4e297192ea140592114": {
+      "type": "text",
+      "id": "12de3c96b204a4e297192ea140592114",
+      "source_id": "",
+      "content": "\"I will sit on it a little longer,\" said the Duck. \"I have been sitting so long, that I may as well spend the harvest here.\""
+    },
+    "dcee7a7f4011704106091672d92cb081": {
+      "type": "text",
+      "id": "dcee7a7f4011704106091672d92cb081",
+      "source_id": "",
+      "content": "\"It is no business of mine,\" said the old Duck, and away she waddled."
+    },
+    "647aff48d895f33123691cd951fac717": {
+      "type": "text",
+      "id": "647aff48d895f33123691cd951fac717",
+      "source_id": "",
+      "content": "The great egg burst at last. \"Chick! chick!\" said the little one, and out it tumbled—but, oh! how large and ugly it was! The Duck looked at it. \"That is a great, strong creature,\" said she. \"None of the others are at all like it. Can it be a young turkey-cock? Well, we shall soon find out. It must go into the water, though I push it in myself.\""
+    },
+    "4ae145f6fd30b0c5793dc96d28759598": {
+      "type": "text",
+      "id": "4ae145f6fd30b0c5793dc96d28759598",
+      "source_id": "",
+      "content": "The next day there was delightful weather, and the sun shone warmly upon the green leaves when Mother Duck with all her family went down to the canal. Plump she went into the water. \"Quack! quack!\" cried she, and one duckling after another jumped in. The water closed over their heads, but all came up again, and swam together quite easily. Their legs moved without effort. All were there, even the ugly grey one."
+    },
+    "34f4beee8b6917a4761c09d257686e92": {
+      "type": "text",
+      "id": "34f4beee8b6917a4761c09d257686e92",
+      "source_id": "",
+      "content": "\"No; it is not a turkey,\" said the old Duck; \"only see how prettily it moves its legs, how upright[26] it holds itself! It is my own child. It is also really very pretty, when you look more closely at it. Quack! quack! now come with me, I will take you into the world and introduce you in the duck-yards. But keep close to me, or someone may tread on you; and beware of the Cat.\""
+    },
+    "9edb6da8c43ed84e204b6acff1aafb43": {
+      "type": "text",
+      "id": "9edb6da8c43ed84e204b6acff1aafb43",
+      "source_id": "",
+      "content": "So they came into the duck-yard. There was a horrid noise; two families were quarreling about the head of an eel, which in the end was carried off by the Cat."
+    },
+    "641d36bb2e2a5bf0f5a1fdcbba914093": {
+      "type": "text",
+      "id": "641d36bb2e2a5bf0f5a1fdcbba914093",
+      "source_id": "",
+      "content": "\"See, my children, such is the way of the world,\" said the Mother Duck, wiping her beak, for she, too, was fond of eels. \"Now use your legs,\" said she, \"keep together, and bow to the old Duck you see yonder. She is the most distinguished of all the fowls present, and is of Spanish blood, which accounts for her dignified appearance and manners. And look, she has a red rag on her leg! That is considered extremely handsome, and is the greatest honor a Duck can have. Don't turn your feet inwards; a well-educated Duckling always keeps his legs far apart, like his father and mother, just so—look! Now bow your necks, and say, 'Quack.'\""
+    },
+    "text_e09f18d16c01ffc7a798daa04cdb59da": {
+      "type": "text",
+      "id": "text_e09f18d16c01ffc7a798daa04cdb59da",
+      "source_id": "",
+      "content": "\"What is the Matter?\" asked the Old Woman"
+    },
+    "figure_ee3e9a915b53909b47bf4db43560bb93": {
+      "type": "figure",
+      "id": "figure_ee3e9a915b53909b47bf4db43560bb93",
+      "image": "figure_ee3e9a915b53909b47bf4db43560bb93.png",
+      "image_url": "",
+      "label": "Figure ",
+      "caption": "text_e09f18d16c01ffc7a798daa04cdb59da"
+    },
+    "figure_ee3e9a915b53909b47bf4db43560bb93.png": {
+      "type": "file",
+      "id": "figure_ee3e9a915b53909b47bf4db43560bb93.png",
+      "version": 1,
+      "content_type": "image/png"
+    },
+    "a2c71f3d2874abccaca92c8a6ea7899a": {
+      "type": "text",
+      "id": "a2c71f3d2874abccaca92c8a6ea7899a",
+      "source_id": "",
+      "content": "And they did as they were told. But the[27] other Ducks, who were in the yard, looked at them and said aloud, \"Just see! Now we have another brood, as if there were not enough of us already. And fie! how ugly that one is. We will not endure it.\" And immediately one of the Ducks flew at him, and bit him in the neck."
+    },
+    "a7a1fc79083190527fb50e535a12aee7": {
+      "type": "text",
+      "id": "a7a1fc79083190527fb50e535a12aee7",
+      "source_id": "",
+      "content": "\"Leave him alone,\" said the mother. \"He is doing no one any harm.\""
+    },
+    "8419aba9d1466eede773499db00270c0": {
+      "type": "text",
+      "id": "8419aba9d1466eede773499db00270c0",
+      "source_id": "",
+      "content": "\"Yes, but he is so large and so strange-looking, and therefore he shall be teased,\" said the others."
+    },
+    "5cf564b1ccbedfce7cf76cd302264805": {
+      "type": "text",
+      "id": "5cf564b1ccbedfce7cf76cd302264805",
+      "source_id": "",
+      "content": "\"Those are fine children that our good mother has,\" said the old Duck with the red rag on her leg. \"All are pretty except one, and that has not turned out well; I almost wish it could be hatched over again.\""
+    },
+    "6dd54ccf45a30c653dc31d4d80424b1d": {
+      "type": "text",
+      "id": "6dd54ccf45a30c653dc31d4d80424b1d",
+      "source_id": "",
+      "content": "\"That cannot be, please your Highness,\" said the mother. \"Certainly he is not handsome, but he is a very good child, and swims as well as the others, indeed, rather better. I think he will grow like the others all in good time, and perhaps will look smaller. He stayed so long in the egg-shell, that is the cause of the difference.\" And she scratched the Duckling's neck, and stroked his whole body. \"Besides,\" added she, \"he is a Drake. I think he will be very strong, so it does not matter so much. He will fight his way through.\""
+    },
+    "253bcffaf973ee5f9f31e10cac76b20d": {
+      "type": "text",
+      "id": "253bcffaf973ee5f9f31e10cac76b20d",
+      "source_id": "",
+      "content": "\"The other Ducks are very pretty,\" said the old Duck. \"Pray make yourselves at home, and if you find an eel's head you can bring it to me.\""
+    },
+    "0db15c90f465c428e8acb12d3365c70b": {
+      "type": "text",
+      "id": "0db15c90f465c428e8acb12d3365c70b",
+      "source_id": "",
+      "content": "So they made themselves at home."
+    },
+    "98b9be0a42d7185d45914d74b2cf60df": {
+      "type": "text",
+      "id": "98b9be0a42d7185d45914d74b2cf60df",
+      "source_id": "",
+      "content": "But the poor little Duckling, who had come last out of its egg-shell, and who was so ugly, was bitten, pecked, and teased by both Ducks and Hens. \"It is so large!\" said they all. And the Turkey-cock, who had come into the world with spurs on, and therefore fancied he was an emperor, puffed himself up like a ship in full sail, and marched up to the Duckling quite red with passion. The poor little thing scarcely knew what to do. He was quite distressed, because he was so ugly, and because he was the jest of the poultry-yard."
+    },
+    "74078e4b50f897e8ca3913ce224bbfec": {
+      "type": "text",
+      "id": "74078e4b50f897e8ca3913ce224bbfec",
+      "source_id": "",
+      "content": "So passed the first day, and afterwards matters grew worse and worse—the poor Duckling was scorned by all. Even his brothers and sisters behaved unkindly, and were constantly saying, \"May the Cat take you, you nasty creature!\" The mother said, \"Ah, if you were only far away!\" The Ducks bit him, the Hens pecked him, and the girl who fed the poultry kicked him."
+    },
+    "text_60cb067c81ec0db8b775e50190580f39": {
+      "type": "text",
+      "id": "text_60cb067c81ec0db8b775e50190580f39",
+      "source_id": "",
+      "content": ""
+    },
+    "figure_1a59a7929d29b6e5c0943f9704a83d04": {
+      "type": "figure",
+      "id": "figure_1a59a7929d29b6e5c0943f9704a83d04",
+      "image": "figure_1a59a7929d29b6e5c0943f9704a83d04.png",
+      "image_url": "",
+      "label": "Figure ",
+      "caption": "text_60cb067c81ec0db8b775e50190580f39"
+    },
+    "figure_1a59a7929d29b6e5c0943f9704a83d04.png": {
+      "type": "file",
+      "id": "figure_1a59a7929d29b6e5c0943f9704a83d04.png",
+      "version": 1,
+      "content_type": "image/png"
+    },
+    "text_44fd084cb1e8aa8a09dd9edaa96bb430": {
+      "type": "text",
+      "id": "text_44fd084cb1e8aa8a09dd9edaa96bb430",
+      "source_id": "",
+      "content": ""
+    },
+    "figure_3cfdd8cdf54ed820e3e3e9470a078c3b": {
+      "type": "figure",
+      "id": "figure_3cfdd8cdf54ed820e3e3e9470a078c3b",
+      "image": "figure_3cfdd8cdf54ed820e3e3e9470a078c3b.png",
+      "image_url": "",
+      "label": "Figure ",
+      "caption": "text_44fd084cb1e8aa8a09dd9edaa96bb430"
+    },
+    "figure_3cfdd8cdf54ed820e3e3e9470a078c3b.png": {
+      "type": "file",
+      "id": "figure_3cfdd8cdf54ed820e3e3e9470a078c3b.png",
+      "version": 1,
+      "content_type": "image/png"
+    },
+    "186bd98b7f0205aba23b6a6292413ef9": {
+      "type": "text",
+      "id": "186bd98b7f0205aba23b6a6292413ef9",
+      "source_id": "",
+      "content": "He ran through the hedge, and the little birds in the bushes were terrified. \"That is because I am so ugly,\" thought the Duckling, shutting his eyes, but he ran on. At last he came to a wide moor, where lived some Wild Ducks; here he lay[30] the whole night, very tired and comfortless. In the morning the Wild Ducks flew up, and saw their new companion. \"Pray who are you?\" asked they; and our little Duckling turned himself in all directions, and greeted them as politely as possible."
+    },
+    "ce7fe92fbc413ca65f10fd03fe79e0f1": {
+      "type": "text",
+      "id": "ce7fe92fbc413ca65f10fd03fe79e0f1",
+      "source_id": "",
+      "content": "\"You are really uncommonly ugly!\" said the Wild Ducks. \"However, that does not matter to us, provided you do not marry into our families.\" Poor thing! he had never thought of marrying; he only begged permission to lie among the reeds, and drink the water of the moor."
+    },
+    "text_133fd76501badf0cd49787f8a7920c12": {
+      "type": "text",
+      "id": "text_133fd76501badf0cd49787f8a7920c12",
+      "source_id": "",
+      "content": "Enter captionThere he lay for two whole days. On the third day there came two Wild Geese, or rather Ganders, who had not been long out of their egg-shells, which accounts for their impertinence."
+    },
+    "figure_8764af8b2dac0e07c43455d9a050c006.png": {
+      "type": "file",
+      "id": "figure_8764af8b2dac0e07c43455d9a050c006.png",
+      "version": 1,
+      "content_type": "image/png"
+    },
+    "0ecaf205b704a43574448392ad061a98": {
+      "type": "text",
+      "id": "0ecaf205b704a43574448392ad061a98",
+      "source_id": "",
+      "content": "There he lay for two whole days. On the third day there came two Wild Geese, or rather Ganders, who had not been long out of their egg-shells, which accounts for their impertinence."
+    },
+    "90b4cbd836318010a865b6fd0f44a162": {
+      "type": "text",
+      "id": "90b4cbd836318010a865b6fd0f44a162",
+      "source_id": "",
+      "content": "\"Hark ye,\" said they; \"you are so ugly that we like you very well. Will you come with us[31]and be a bird of passage? On another moor, not far from this, are some dear, sweet Wild Geese, as lovely creatures as have ever said 'Hiss, hiss.' You are truly in the way to make your fortune, ugly as you are.\""
+    },
+    "142cb7662beeab04b61e269f558f1a02": {
+      "type": "text",
+      "id": "142cb7662beeab04b61e269f558f1a02",
+      "source_id": "",
+      "content": "Bang! a gun went off all at once, and both Wild Geese were stretched dead among the reeds; the water became red with blood. Bang! a gun went off again. Whole flocks of Wild Geese flew up from among the reeds, and another report followed."
+    },
+    "aa1d7a9fc727a075cd6ee9ecc55a1e92": {
+      "type": "text",
+      "id": "aa1d7a9fc727a075cd6ee9ecc55a1e92",
+      "source_id": "",
+      "content": "There was a grand hunting party. The hunters lay in ambush all around; some were even sitting in the trees, whose huge branches stretched far over the moor. The blue smoke rose through the thick trees like a mist, and was dispersed as it fell over the water. The hounds splashed about in the mud, the reeds and rushes bent in all directions."
+    },
+    "66e63c04af5708015e538f166361f50b": {
+      "type": "text",
+      "id": "66e63c04af5708015e538f166361f50b",
+      "source_id": "",
+      "content": "How frightened the poor little Duck was! He turned his head, thinking to hide it under his wings, and in a moment a most formidable-looking Dog stood close to him, his tongue hanging out of his mouth, his eyes sparkling fearfully. He opened wide his jaws at the sight of our Duckling, showing him his sharp white teeth, and, splash, splash! he was gone—gone without hurting him."
+    },
+    "18378639363aa7f9fe798ada1eb5a6fa": {
+      "type": "text",
+      "id": "18378639363aa7f9fe798ada1eb5a6fa",
+      "source_id": "",
+      "content": "\"Well! let me be thankful,\" sighed he. \"I am so ugly that even the Dog will not eat me.\""
+    },
+    "e65e9d9ced82cb8ab506fa204b4d1645": {
+      "type": "text",
+      "id": "e65e9d9ced82cb8ab506fa204b4d1645",
+      "source_id": "",
+      "content": "And now he lay still, though the shooting continued among the reeds, shot following shot."
+    },
+    "f0fad34560ded33cd42e4b8e9fa569fd": {
+      "type": "text",
+      "id": "f0fad34560ded33cd42e4b8e9fa569fd",
+      "source_id": "",
+      "content": "The noise did not cease till late in the day, and even then the poor little thing dared not stir. He waited several hours before he looked around him, and then hurried away from the moor as fast as he could. He ran over fields and meadows, though the wind was so high that he had some difficulty in moving."
+    },
+    "e9e3dcd705df61c21ecb023d45989dd8": {
+      "type": "text",
+      "id": "e9e3dcd705df61c21ecb023d45989dd8",
+      "source_id": "",
+      "content": "Towards evening he reached a wretched little hut, so wretched that it knew not on which side to fall, and therefore remained standing. The wind blew violently, so that our poor little Duckling was obliged to support himself on his tail, in order to stand against it; but it became worse and worse. He then noticed that the door had lost one of its hinges, and hung so much awry that he could creep through the crack into the room. So he went in."
+    },
+    "5917c810c3b0dd70161d34f35c251abb": {
+      "type": "text",
+      "id": "5917c810c3b0dd70161d34f35c251abb",
+      "source_id": "",
+      "content": "In this room lived an old woman, with her Tom-cat and her Hen. The Cat, whom she called her little son, knew how to set up his back and purr; indeed, he could even throw out sparks when stroked the wrong way. The Hen had very short legs, and was therefore called \"Chickie Short-legs.\" She laid very good eggs, and the old woman loved her as her own child."
+    },
+    "34f934941492f824b8ad7b25c4673d2d": {
+      "type": "text",
+      "id": "34f934941492f824b8ad7b25c4673d2d",
+      "source_id": "",
+      "content": "The next morning the new guest was discovered, and the Cat began to mew and the Hen to cackle."
+    },
+    "e7230754950dafbe6cce20ee49bcfaa8": {
+      "type": "text",
+      "id": "e7230754950dafbe6cce20ee49bcfaa8",
+      "source_id": "",
+      "content": "\"What is the matter?\" asked the old woman, looking round. But her eyes were not good, so she took the young Duckling to be a fat Duck who had lost her way. \"This is a capital catch,\" said she, \"I shall now have Duck's eggs, if it be not a Drake. We shall see.\""
+    },
+    "89032bebf6faf527f3d8b7f1d5c1449c": {
+      "type": "text",
+      "id": "89032bebf6faf527f3d8b7f1d5c1449c",
+      "source_id": "",
+      "content": "And so the Duckling was kept on trial for three weeks, but no eggs made[34] their appearance. Now the Cat was the master of the house, and the Hen was the mistress, and always used to say, \"We and the world,\" for they imagined themselves to be not only the half of the world, but also by far the better half. The Duckling thought it was possible to be of a different opinion, but that the Hen would not allow."
+    },
+    "7d5e3d47e9b8013af06c2a1ce7964889": {
+      "type": "text",
+      "id": "7d5e3d47e9b8013af06c2a1ce7964889",
+      "source_id": "",
+      "content": "\"Can you lay eggs?\" asked she."
+    },
+    "37fac1a3ec2845e4b4e51103b4245246": {
+      "type": "text",
+      "id": "37fac1a3ec2845e4b4e51103b4245246",
+      "source_id": "",
+      "content": "\"No.\""
+    },
+    "3eaa45bc55f6905672790600a3724329": {
+      "type": "text",
+      "id": "3eaa45bc55f6905672790600a3724329",
+      "source_id": "",
+      "content": "\"Well, then, hold your tongue.\""
+    },
+    "565130ab5d8742ffa6b05dda83841355": {
+      "type": "text",
+      "id": "565130ab5d8742ffa6b05dda83841355",
+      "source_id": "",
+      "content": "And the Cat said, \"Can you set up your back? Can you purr?\""
+    },
+    "813ccba673e2bdc68455041766288166": {
+      "type": "text",
+      "id": "813ccba673e2bdc68455041766288166",
+      "source_id": "",
+      "content": "\"No.\""
+    },
+    "5907aa5df27af7aa59ec22bb0a1c4dc6": {
+      "type": "text",
+      "id": "5907aa5df27af7aa59ec22bb0a1c4dc6",
+      "source_id": "",
+      "content": "\"Well, then, you should have no opinion when reasonable people are speaking.\""
+    },
+    "555db83145e8659aed5c2d826043293c": {
+      "type": "text",
+      "id": "555db83145e8659aed5c2d826043293c",
+      "source_id": "",
+      "content": "So the Duckling sat alone in a corner, and felt very miserable. However, he happened to think of the fresh air and bright sunshine, and these thoughts gave him such a strong desire to swim again, that he could not help telling it to the Hen."
+    },
+    "99303615ec58f35ddb843b987e4536d3": {
+      "type": "text",
+      "id": "99303615ec58f35ddb843b987e4536d3",
+      "source_id": "",
+      "content": "\"What ails you?\" said the Hen. \"You have nothing to do, and therefore brood over these fancies. Either lay eggs or purr, then you will forget them.\""
+    },
+    "10fdb6eac8d97a33361f053834d1e4d0": {
+      "type": "text",
+      "id": "10fdb6eac8d97a33361f053834d1e4d0",
+      "source_id": "",
+      "content": "\"But it is so delicious to swim!\" said the Duckling. \"So delicious when the waters close over your head, and you plunge to the bottom!\""
+    },
+    "9e4ed6e21fa23fd02a6eb70232cfae8a": {
+      "type": "text",
+      "id": "9e4ed6e21fa23fd02a6eb70232cfae8a",
+      "source_id": "",
+      "content": "\"Well, that is a queer sort of pleasure,\" said the Hen. \"I think you must be crazy. Not to speak of myself, ask the Cat—he is the most sensible animal I know—whether he would like to swim, or to plunge to the bottom of the water. Ask our mistress, the old woman—there is no one in the world wiser than she. Do you think she would take pleasure in swimming and in the waters closing over her head?\""
+    },
+    "76d33c7d2a7ec4bf52db1f9ffaeba366": {
+      "type": "text",
+      "id": "76d33c7d2a7ec4bf52db1f9ffaeba366",
+      "source_id": "",
+      "content": "\"You do not understand me,\" said the Duckling."
+    },
+    "c00ac725aecb7829f740d57c446bd442": {
+      "type": "text",
+      "id": "c00ac725aecb7829f740d57c446bd442",
+      "source_id": "",
+      "content": "\"What! we do not understand you? So you think yourself wiser than the Cat and the old woman, not to speak of myself? Do not fancy any such thing, child; but be thankful for all the kindness that has been shown you. Are you not lodged in a warm room, and have you not the advantage of society from which you can learn something? But you are a simpleton, and it is wearisome to have anything to do with you. Believe me, I wish you well. I tell you unpleasant truths, but it is thus that real friendship is shown. Come, for once give yourself the trouble to learn to purr, or to lay eggs.\""
+    },
+    "626bf5f62586f11434f027d21e3b9f95": {
+      "type": "text",
+      "id": "626bf5f62586f11434f027d21e3b9f95",
+      "source_id": "",
+      "content": "\"I think I will go out into the wide world again,\" said the Duckling."
+    },
+    "de0e77d1ccf55ed5a08bdc804620ed58": {
+      "type": "text",
+      "id": "de0e77d1ccf55ed5a08bdc804620ed58",
+      "source_id": "",
+      "content": "\"Well, go,\" answered the Hen."
+    },
+    "113812e7c6de748dc3f4018d00c7d17d": {
+      "type": "text",
+      "id": "113812e7c6de748dc3f4018d00c7d17d",
+      "source_id": "",
+      "content": "So the Duckling went. He swam on the surface of the water, he plunged beneath, but all animals passed him by, on account of his ugliness. And the autumn came, the leaves turned yellow and brown, the wind caught them and danced them about, the air was very cold, the clouds were heavy with hail or snow, and the Raven sat on the hedge and croaked. The poor Duckling was certainly not very comfortable."
+    },
+    "91e2e5dd6f7be21ccb056e1d47385207": {
+      "type": "text",
+      "id": "91e2e5dd6f7be21ccb056e1d47385207",
+      "source_id": "",
+      "content": "One evening, just as the sun was setting with unusual brilliancy, a flock of large, beautiful birds rose from out of the brushwood. The Duckling had never seen anything so beautiful before; their plumage was of a dazzling white, and they had long, slender necks. They were Swans. They uttered a singular cry, spread out their long splendid wings, and flew away from these cold regions to warmer countries, across the open sea. They flew so high, so very high! And the little Ugly Duckling's feelings were so strange. He turned round and round in the water like a mill-wheel, strained his neck to look after them, and sent forth such a loud and strange cry that it almost frightened himself. Ah! he could not forget them, those noble birds, those happy birds! When he could see them no longer he plunged to the bottom of the water, and when he rose again was almost beside himself. The Duckling knew not what the birds were called, knew not whither they were flying; yet he loved them as he had never before loved anything. He envied them not; it would never have occurred to him to wish such beauty for himself. He would have been quite contented if the Ducks in the duck-yard had but endured his company—the poor, ugly creature."
+    },
+    "67e892cb49a206cefdde8470772c311c": {
+      "type": "text",
+      "id": "67e892cb49a206cefdde8470772c311c",
+      "source_id": "",
+      "content": "And the winter was so cold, so cold, the Duckling was obliged to swim round and round in the water to keep it from freezing. But every night the opening in which he swam became smaller and smaller. It froze so that the crust of ice crackled and the Duckling was obliged to make good use of his legs to prevent the water from freezing entirely. At last, wearied out, he lay stiff and cold in the ice."
+    },
+    "b00ed1912c32b4402cef127e898c2f5f": {
+      "type": "text",
+      "id": "b00ed1912c32b4402cef127e898c2f5f",
+      "source_id": "",
+      "content": "Early in the morning there passed by a peasant who saw him, broke the ice in pieces with his wooden shoe, and brought him home to his wife."
+    },
+    "45900431f0b3bf261ecc4fafa6c96623": {
+      "type": "text",
+      "id": "45900431f0b3bf261ecc4fafa6c96623",
+      "source_id": "",
+      "content": "The poor Duckling soon revived. The children would have played with him, but he thought they wished to tease him, and in his terror jumped into the milk-pail, so that the milk was spilled about the room. The good woman screamed and clapped her hands. He flew from there into the pan where the butter was kept, and thence into the meal-barrel, and out again, and then how strange he looked!"
+    },
+    "ad5f1ecc9d58493357a2d9edca4b726e": {
+      "type": "text",
+      "id": "ad5f1ecc9d58493357a2d9edca4b726e",
+      "source_id": "",
+      "content": "The woman screamed, and struck at him with the tongs, the children ran races with each other trying to catch him, and laughed and screamed likewise. It was well for him that the door stood open. He jumped out among the bushes into the new-fallen snow, and there he lay as in a dream."
+    },
+    "2497e35270245d1c064460a89c38ba47": {
+      "type": "text",
+      "id": "2497e35270245d1c064460a89c38ba47",
+      "source_id": "",
+      "content": "But it would be too sad to tell all the trouble and misery that he had to suffer from the frost, and snow and storms of the winter. He was lying on a moor among the reeds, when the sun began to shine warmly again; the larks sang, and beautiful spring had returned."
+    },
+    "0d617023dc486b5fa3825b68e8a6baba": {
+      "type": "text",
+      "id": "0d617023dc486b5fa3825b68e8a6baba",
+      "source_id": "",
+      "content": "Once more he shook his wings. They were stronger than formerly and bore him forward quickly, and before he was well aware of it he was in a large garden where the apple-trees stood in full bloom, where the syringas sent forth their fragrance and hung their long green branches down into the winding canal. Oh! everything was so lovely, so full of the freshness of spring! And out of the thicket came three beautiful white Swans. They displayed their feathers so proudly and swam so lightly, so lightly! The Duckling knew the glorious creatures, and was seized with a strange sadness."
+    },
+    "text_d531c90409b556ceb3fbf95ddd8aa792": {
+      "type": "text",
+      "id": "text_d531c90409b556ceb3fbf95ddd8aa792",
+      "source_id": "",
+      "content": ""
+    },
+    "figure_91e8126e1a703c11be226ba1bb394d0b": {
+      "type": "figure",
+      "id": "figure_91e8126e1a703c11be226ba1bb394d0b",
+      "image": "figure_91e8126e1a703c11be226ba1bb394d0b.png",
+      "image_url": "",
+      "label": "Figure ",
+      "caption": "text_d531c90409b556ceb3fbf95ddd8aa792"
+    },
+    "figure_91e8126e1a703c11be226ba1bb394d0b.png": {
+      "type": "file",
+      "id": "figure_91e8126e1a703c11be226ba1bb394d0b.png",
+      "version": 1,
+      "content_type": "image/png"
+    },
+    "b26e224860bff95e34a5164d8ed46fd9": {
+      "type": "text",
+      "id": "b26e224860bff95e34a5164d8ed46fd9",
+      "source_id": "",
+      "content": "\"I will fly to them, those kingly birds!\" said he. \"They will kill me, because I, ugly as I am, have dared to approach them. But it matters not. Better to be killed by them than to be bitten by the Ducks, pecked by the Hens, kicked by the girl who feeds the poultry, and to have so much to suffer during the winter!\""
+    },
+    "8c9beb9d96fa69b140b070f6b2b57d28": {
+      "type": "text",
+      "id": "8c9beb9d96fa69b140b070f6b2b57d28",
+      "source_id": "",
+      "content": "He flew into the water and swam towards the beautiful creatures. They saw him and shot forward to meet him. \"Only kill me,\" said the poor creature, and he bowed his head low, expecting death. But what did he see in the water? He saw beneath him his own form, no longer that of a plump, ugly grey bird—it was that of a Swan."
+    },
+    "text_47d9e7ce738c0f226baaba27e41bbb46": {
+      "type": "text",
+      "id": "text_47d9e7ce738c0f226baaba27e41bbb46",
+      "source_id": "",
+      "content": ""
+    },
+    "figure_30e59bba315c73f128f1d27894f66061": {
+      "type": "figure",
+      "id": "figure_30e59bba315c73f128f1d27894f66061",
+      "image": "figure_30e59bba315c73f128f1d27894f66061.png",
+      "image_url": "",
+      "label": "Figure ",
+      "caption": "text_47d9e7ce738c0f226baaba27e41bbb46"
+    },
+    "figure_30e59bba315c73f128f1d27894f66061.png": {
+      "type": "file",
+      "id": "figure_30e59bba315c73f128f1d27894f66061.png",
+      "version": 1,
+      "content_type": "image/png"
+    },
+    "829db210c709740169341404b1c300dd": {
+      "type": "text",
+      "id": "829db210c709740169341404b1c300dd",
+      "source_id": "",
+      "content": "It matters not to have been born in a duck-yard, if one has been hatched from a Swan's egg. And now the Swan began to see the good of all the trouble he had been through. He would never have known how happy he was if he had not first had all his sorrow and unhappiness to bear."
+    },
+    "556df677eb6accf2161b49041593146a": {
+      "type": "text",
+      "id": "556df677eb6accf2161b49041593146a",
+      "source_id": "",
+      "content": "The larger Swans swam round him, and stroked him with their beaks. Some little children were running about in the garden; they threw grain and bread into the water, and the youngest exclaimed: \"There is a new one!\" The others also cried out: \"Yes, a new Swan has come!\" and they clapped their hands, and danced around."
+    },
+    "ed385ffc927e50b52f6a5e416a4691ac": {
+      "type": "text",
+      "id": "ed385ffc927e50b52f6a5e416a4691ac",
+      "source_id": "",
+      "content": "They ran to their father and mother, bread and cake were thrown into the water, and every one said: \"The new one is best, so young and so beautiful!\" And the old Swans bowed before him. The young Swan felt quite ashamed, and hid his head under his wings. He scarcely knew what to do. He was too happy, but still not proud, for a good heart is never proud."
+    },
+    "b000bd4b9f3f2d5c84f4f2c64209fde8": {
+      "type": "text",
+      "id": "b000bd4b9f3f2d5c84f4f2c64209fde8",
+      "source_id": "",
+      "content": "He remembered how he had been persecuted and laughed at, and he now heard everyone say that he was the most beautiful of all beautiful birds. The syringas bent down their branches toward him low into the water, and the sun shone warmly and brightly. He shook his feathers, stretched his slender neck, and in the joy of his heart said: \"How little did I dream of so much happiness when I was the despised Ugly Duckling!\""
+    },
+    "3175dda73381f63c7207aae754e5788f": {
+      "type": "text",
+      "id": "3175dda73381f63c7207aae754e5788f",
+      "source_id": "",
+      "content": "Source: Project Gutenberg"
+    },
+    "text_95d03e17e8107b1ec1ac946f525c653e": {
+      "type": "text",
+      "id": "text_95d03e17e8107b1ec1ac946f525c653e",
+      "source_id": "",
+      "content": ""
+    },
+    "figure_c1cedf6092746d5e57e80dc68345e8e2": {
+      "type": "figure",
+      "id": "figure_c1cedf6092746d5e57e80dc68345e8e2",
+      "image": "figure_c1cedf6092746d5e57e80dc68345e8e2.png",
+      "image_url": "",
+      "label": "Figure ",
+      "caption": "text_95d03e17e8107b1ec1ac946f525c653e"
+    },
+    "figure_c1cedf6092746d5e57e80dc68345e8e2.png": {
+      "type": "file",
+      "id": "figure_c1cedf6092746d5e57e80dc68345e8e2.png",
+      "version": 1,
+      "content_type": "image/png"
+    },
+    "web_resource_30d2008da215e7ef5205d4c9a55219e8": {
+      "type": "web_resource",
+      "id": "web_resource_30d2008da215e7ef5205d4c9a55219e8",
+      "description": "Free ebooks - Project Gutenberg",
+      "url": "http://www.gutenberg.org/files/20748/20748-h/20748-h.htm#ugly"
+    },
+    "citation_reference_15f38d30834fbf1e97f9383198e01349": {
+      "type": "citation_reference",
+      "id": "citation_reference_15f38d30834fbf1e97f9383198e01349",
+      "path": [
+        "3175dda73381f63c7207aae754e5788f",
+        "content"
+      ],
+      "range": [
+        8,
+        25
+      ],
+      "target": "web_resource_30d2008da215e7ef5205d4c9a55219e8"
+    },
+    "emphasis_619d1f392e413363e636fc561b04d307": {
+      "type": "emphasis",
+      "id": "emphasis_619d1f392e413363e636fc561b04d307",
+      "path": [
+        "76d33c7d2a7ec4bf52db1f9ffaeba366",
+        "content"
+      ],
+      "range": [
+        0,
+        25
+      ]
+    },
+    "contributor_b29be4833e6914cc86371e45eb047448.png": {
+      "type": "file",
+      "id": "contributor_b29be4833e6914cc86371e45eb047448.png",
+      "version": 1,
+      "content_type": "image/png"
+    },
+    "license": {
+      "type": "license",
+      "id": "license",
+      "name": "Project Gutenberg",
+      "code": "gutenberg",
+      "version": "1.0",
+      "description": "This article is distributed under the terms of the Project Gutenberg License.",
+      "url": "http://www.gutenberg.org/wiki/Gutenberg:The_Project_Gutenberg_License"
+    },
+    "emphasis_92dfe71d076e6bb77b8c849cd6262074": {
+      "type": "emphasis",
+      "id": "emphasis_92dfe71d076e6bb77b8c849cd6262074",
+      "path": [
+        "text_e09f18d16c01ffc7a798daa04cdb59da",
+        "content"
+      ],
+      "range": [
+        0,
+        21
+      ]
+    }
+  }
+}
