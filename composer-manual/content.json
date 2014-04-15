@@ -23,7 +23,7 @@
       ],
       "abstract": "",
       "created_at": "2014-04-05T16:34:01.762Z",
-      "updated_at": "2014-04-13T02:32:01.749Z",
+      "updated_at": "2014-04-15T16:42:18.528Z",
       "published_on": "2014-04-09T16:34:01.763Z"
     },
     "cover": {
@@ -77,6 +77,16 @@
         "heading_f00004f1d1353fcf9165db468da83bd9",
         "21592bc5693abc92f529b3cdb06652c7",
         "heading_d2824dd68b7a96838598abeee98bf79e",
+        "heading_d4dd43503eb6e154deb04f7abe3b1bcd",
+        "list_item_5abfe9cd9d9de3d9c36cf690c24b32e5",
+        "list_item_d84143e0a5cd26459a8dd267dcbb8462",
+        "list_item_57c27bc97d7aa0308ccb12358b443272",
+        "list_item_1cbc330a92e34c412693c2f7ce1626c5",
+        "heading_af22716dcd6f88afdc616d184aa0b019",
+        "list_item_a840b01fcc41a5f47e2fba9a0a8e2545",
+        "list_item_0b8d4981602f4aebd8e7aefe0ac46698",
+        "heading_5081b9286b6701e3c6c81f925848597e",
+        "59ae0182bcdbfd6c066f59823082b872",
         "heading_d5d5a604080f2de530669d90fa9e748a",
         "a0c848ba24e2af47e152c4906d73ce2d",
         "heading_479280182170806de6b2696927945092",
@@ -102,7 +112,9 @@
     "remarks": {
       "type": "view",
       "id": "remarks",
-      "nodes": []
+      "nodes": [
+        "remark_3d11e94c14a2fb6f11ecb52a724b7401"
+      ]
     },
     "errors": {
       "type": "view",
@@ -886,6 +898,114 @@
         45,
         55
       ]
+    },
+    "heading_d4dd43503eb6e154deb04f7abe3b1bcd": {
+      "type": "heading",
+      "id": "heading_d4dd43503eb6e154deb04f7abe3b1bcd",
+      "source_id": "",
+      "content": "Why can't I publish with a single click?",
+      "level": 2
+    },
+    "heading_af22716dcd6f88afdc616d184aa0b019": {
+      "type": "heading",
+      "id": "heading_af22716dcd6f88afdc616d184aa0b019",
+      "source_id": "",
+      "content": "How can I publish a collection of documents?",
+      "level": 2
+    },
+    "list_item_5abfe9cd9d9de3d9c36cf690c24b32e5": {
+      "type": "list_item",
+      "id": "list_item_5abfe9cd9d9de3d9c36cf690c24b32e5",
+      "level": 1,
+      "content": "zero-infrastucture (substance doesn't have a backend)"
+    },
+    "heading_5081b9286b6701e3c6c81f925848597e": {
+      "type": "heading",
+      "id": "heading_5081b9286b6701e3c6c81f925848597e",
+      "source_id": "",
+      "content": "What's in an .SDF file?",
+      "level": 2
+    },
+    "list_item_d84143e0a5cd26459a8dd267dcbb8462": {
+      "type": "list_item",
+      "id": "list_item_d84143e0a5cd26459a8dd267dcbb8462",
+      "level": 1,
+      "content": "allow all possible hosting options (SFTP, FTP, S3, Rackspace)"
+    },
+    "list_item_57c27bc97d7aa0308ccb12358b443272": {
+      "type": "list_item",
+      "id": "list_item_57c27bc97d7aa0308ccb12358b443272",
+      "level": 1,
+      "content": "may be a bit less convenient but you get full control"
+    },
+    "list_item_1cbc330a92e34c412693c2f7ce1626c5": {
+      "type": "list_item",
+      "id": "list_item_1cbc330a92e34c412693c2f7ce1626c5",
+      "level": 1,
+      "content": "In future we may be offering a platform, but only if Substance is adopted well-enough."
+    },
+    "list_item_a840b01fcc41a5f47e2fba9a0a8e2545": {
+      "type": "list_item",
+      "id": "list_item_a840b01fcc41a5f47e2fba9a0a8e2545",
+      "level": 1,
+      "content": "Substance is build around a self-contained publications"
+    },
+    "list_item_0b8d4981602f4aebd8e7aefe0ac46698": {
+      "type": "list_item",
+      "id": "list_item_0b8d4981602f4aebd8e7aefe0ac46698",
+      "level": 1,
+      "content": "Integration scenarios are different"
+    },
+    "59ae0182bcdbfd6c066f59823082b872": {
+      "type": "text",
+      "id": "59ae0182bcdbfd6c066f59823082b872",
+      "source_id": "",
+      "content": ".sdf files are just zip archives. You can rename them to .zip and extract its contents. Inside you'll find a content.json file plus assets like images."
+    },
+    "code_409db3141e234251fcdc106ab7c37698": {
+      "type": "code",
+      "id": "code_409db3141e234251fcdc106ab7c37698",
+      "path": [
+        "59ae0182bcdbfd6c066f59823082b872",
+        "content"
+      ],
+      "range": [
+        57,
+        61
+      ]
+    },
+    "code_18b41ce1a862aea1001682c9727b4cc9": {
+      "type": "code",
+      "id": "code_18b41ce1a862aea1001682c9727b4cc9",
+      "path": [
+        "59ae0182bcdbfd6c066f59823082b872",
+        "content"
+      ],
+      "range": [
+        0,
+        4
+      ]
+    },
+    "remark_3d11e94c14a2fb6f11ecb52a724b7401": {
+      "type": "remark",
+      "id": "remark_3d11e94c14a2fb6f11ecb52a724b7401",
+      "title": "",
+      "description": "This needs some work. Still lacking really good arguments.",
+      "creator": "Oliver Buchtala",
+      "created_at": "2014-04-15T16:41:55.078Z"
+    },
+    "remark_reference_9fb551ca030b9c01fd6ba3edfaa6f56c": {
+      "type": "remark_reference",
+      "id": "remark_reference_9fb551ca030b9c01fd6ba3edfaa6f56c",
+      "path": [
+        "heading_d4dd43503eb6e154deb04f7abe3b1bcd",
+        "content"
+      ],
+      "range": [
+        0,
+        40
+      ],
+      "target": "remark_3d11e94c14a2fb6f11ecb52a724b7401"
     }
   }
 }
