@@ -1,0 +1,10 @@
+{
+  "templateId": "default",
+  "params": {
+    "include_toc": false,
+    "include_references": true,
+    "enable_section_numbering": false,
+    "include_source_file": true,
+    "enable_bookmarks": false
+  }
+}
