@@ -1,0 +1,9 @@
+{
+  "templateId": "substance",
+  "params": {
+    "include_toc": true,
+    "include_references": true,
+    "enable_section_numbering": true,
+    "include_source_file": true
+  }
+}
