@@ -1,0 +1,485 @@
+{
+  "id": "849210360bbd28994d9a577daf9854f3",
+  "schema": [
+    "substance-article",
+    "0.5.0"
+  ],
+  "nodes": {
+    "document": {
+      "id": "document",
+      "type": "document",
+      "views": [
+        "content",
+        "figures",
+        "citations"
+      ],
+      "license": "licence",
+      "guid": "849210360bbd28994d9a577daf9854f3",
+      "creator": "",
+      "title": "Substance Composer Beta 3: Release Notes",
+      "authors": [
+        "contributor_62289cbe8a246ad5dcc35c31b06903d2",
+        "contributor_d7bacd92401215f96351dd2b201f05af"
+      ],
+      "abstract": "In a vigorous effort we created the next version of the Substance Composer - Beta 3. We are very proud to present a wonderful new features, most importantly, native support for Video and Audio. In addition to Windows and OSX, we now have a bundle for Ubuntu ready. We are grateful for your feedback and reports during the last 2 weeks. It helped us to fix numerous bugs and increased the overall stability. ",
+      "created_at": "2014-05-02T16:18:11.610Z",
+      "updated_at": "2014-05-02T18:27:14.308Z",
+      "published_on": "2014-05-02T16:18:11.611Z"
+    },
+    "cover": {
+      "id": "cover",
+      "type": "cover",
+      "authors": [],
+      "image": "cover.jpg"
+    },
+    "content": {
+      "type": "view",
+      "id": "content",
+      "nodes": [
+        "cover",
+        "heading_1f79b3bccdae953a632463d012e8a048",
+        "bccfc05d355bac80d0c8ae1ce3449b23",
+        "heading_9f988896a287735315a556db9b356cb5",
+        "4541db10ccc40347d88174919a0d6135",
+        "figure_c19ade1df7331af16d8651ca029f10f0",
+        "41784737155673383c31fce5371a9bbe",
+        "heading_954ae3118fe6be7d105cf4bea100659b",
+        "b34d95f44ac759789ecf0f3142228a5e",
+        "figure_d022d3309dc8b774d5b8b33c5f1b141c",
+        "c1869aa50390818841d4603628e6070d",
+        "heading_7cadb2a3f504cd4fa7b80ef476c89b07",
+        "a517b400b86937fa0d7cd2201fe7027d",
+        "heading_4acb0ec120d38037885e869b1c94615b",
+        "043a0f1c5dab08fc1a86c18b593b427b",
+        "heading_afac5e5d71d92ec1f0992fe57f8ff879",
+        "6ba7f3e910dc24a878972afcdb795bf0",
+        "figure_ca9a158cc197d4ef477e98de41a32cb9",
+        "99e8a56814473a74fa2421685445ccd2",
+        "6f64fbb0056079b20b86919f938ef761",
+        "heading_d47c713eefe239981254822744b8eaee",
+        "64c183e64c7e3c3eab7ba9285c0b70d0",
+        "heading_b4ac777993c849de707739c3c18774ef",
+        "3a26548bd4f8d735148dba4910eb02e5",
+        "heading_635a46760cfc16d2e09579f1a80b7b42",
+        "b39fc66602d45dfe9882dd769c1e7eca",
+        "heading_b88c0d4d9ddeb5e9d86147b26e04ccc8",
+        "0f2182080ca5205a0c6e142879a9c6b4",
+        "heading_78ec5811386ddd825298f6c2453f99a8",
+        "382c25f7ca27d4cf27514f4039954181",
+        "02b02087f063a3b8895bee34db12287d",
+        "8ba55e363fd6578d521db1f0450f2e3b"
+      ]
+    },
+    "figures": {
+      "type": "view",
+      "id": "figures",
+      "nodes": []
+    },
+    "citations": {
+      "type": "view",
+      "id": "citations",
+      "nodes": []
+    },
+    "remarks": {
+      "type": "view",
+      "id": "remarks",
+      "nodes": []
+    },
+    "errors": {
+      "type": "view",
+      "id": "errors",
+      "nodes": []
+    },
+    "info": {
+      "type": "view",
+      "id": "info",
+      "nodes": [
+        "publication_info",
+        "contributor_62289cbe8a246ad5dcc35c31b06903d2",
+        "contributor_d7bacd92401215f96351dd2b201f05af"
+      ]
+    },
+    "publication_info": {
+      "id": "publication_info",
+      "type": "publication_info"
+    },
+    "license": {
+      "id": "license",
+      "type": "license",
+      "name": "None",
+      "code": "none",
+      "description": "No license",
+      "version": "1.0",
+      "url": ""
+    },
+    "heading_1f79b3bccdae953a632463d012e8a048": {
+      "type": "heading",
+      "id": "heading_1f79b3bccdae953a632463d012e8a048",
+      "source_id": "",
+      "content": "New Features",
+      "level": 1
+    },
+    "heading_4acb0ec120d38037885e869b1c94615b": {
+      "type": "heading",
+      "id": "heading_4acb0ec120d38037885e869b1c94615b",
+      "source_id": "",
+      "content": "Known issues",
+      "level": 1
+    },
+    "contributor_62289cbe8a246ad5dcc35c31b06903d2": {
+      "type": "contributor",
+      "id": "contributor_62289cbe8a246ad5dcc35c31b06903d2",
+      "source_id": "",
+      "name": "Oliver Buchtala",
+      "role": "author",
+      "description": "",
+      "image": "",
+      "email": "",
+      "contribution": ""
+    },
+    "contributor_d7bacd92401215f96351dd2b201f05af": {
+      "type": "contributor",
+      "id": "contributor_d7bacd92401215f96351dd2b201f05af",
+      "source_id": "",
+      "name": "Michael Aufreiter",
+      "role": "author",
+      "description": "",
+      "image": "",
+      "email": "",
+      "contribution": ""
+    },
+    "6ba7f3e910dc24a878972afcdb795bf0": {
+      "type": "text",
+      "id": "6ba7f3e910dc24a878972afcdb795bf0",
+      "source_id": "",
+      "content": "With introducing video and audio support a greater issue appeared with the zip llibrary (jszip) we have been using. In its current state, jszip is not able to deal with large files (which are common with videos) and even leads to crashes under some platforms. For that reason, we deactivated the ability to save documents to SDF files. You can save to a folder instead."
+    },
+    "heading_afac5e5d71d92ec1f0992fe57f8ff879": {
+      "type": "heading",
+      "id": "heading_afac5e5d71d92ec1f0992fe57f8ff879",
+      "source_id": "",
+      "content": "No SDF files",
+      "level": 2
+    },
+    "code_54406ff07f738c97aad78403edae8295": {
+      "type": "code",
+      "id": "code_54406ff07f738c97aad78403edae8295",
+      "path": [
+        "6ba7f3e910dc24a878972afcdb795bf0",
+        "content"
+      ],
+      "range": [
+        89,
+        94
+      ]
+    },
+    "code_bfacf400a050135f099930d40faf47fe": {
+      "type": "code",
+      "id": "code_bfacf400a050135f099930d40faf47fe",
+      "path": [
+        "6ba7f3e910dc24a878972afcdb795bf0",
+        "content"
+      ],
+      "range": [
+        138,
+        143
+      ]
+    },
+    "emphasis_b1e7462d5b19dcf8cd76dcf31b03bfb9": {
+      "type": "emphasis",
+      "id": "emphasis_b1e7462d5b19dcf8cd76dcf31b03bfb9",
+      "path": [
+        "6f64fbb0056079b20b86919f938ef761",
+        "content"
+      ],
+      "range": [
+        50,
+        53
+      ]
+    },
+    "heading_9f988896a287735315a556db9b356cb5": {
+      "type": "heading",
+      "id": "heading_9f988896a287735315a556db9b356cb5",
+      "source_id": "",
+      "content": "Video",
+      "level": 2
+    },
+    "heading_d47c713eefe239981254822744b8eaee": {
+      "type": "heading",
+      "id": "heading_d47c713eefe239981254822744b8eaee",
+      "source_id": "",
+      "content": "Empty node after adding Image",
+      "level": 2
+    },
+    "64c183e64c7e3c3eab7ba9285c0b70d0": {
+      "type": "text",
+      "id": "64c183e64c7e3c3eab7ba9285c0b70d0",
+      "source_id": "",
+      "content": "When you insert an image, audio, or video into an empty paragraph, the empty paragraph does not get replaced.\nFor the time being, you have to delete it yourself."
+    },
+    "043a0f1c5dab08fc1a86c18b593b427b": {
+      "type": "text",
+      "id": "043a0f1c5dab08fc1a86c18b593b427b",
+      "source_id": "",
+      "content": "We are aware of the following problems so we want to let you know them. We will try to address these issues as soon as possible."
+    },
+    "heading_b4ac777993c849de707739c3c18774ef": {
+      "type": "heading",
+      "id": "heading_b4ac777993c849de707739c3c18774ef",
+      "source_id": "",
+      "content": "Backspace in empty caption",
+      "level": 2
+    },
+    "3a26548bd4f8d735148dba4910eb02e5": {
+      "type": "text",
+      "id": "3a26548bd4f8d735148dba4910eb02e5",
+      "source_id": "",
+      "content": "When you press backspace in an empty caption of a video or audio node you will find that the node gets deleted. You can use Undo (command + z / ctrl + z) if that happens to you."
+    },
+    "emphasis_3f89d2ef320a557cc95e7a9211ca3f50": {
+      "type": "emphasis",
+      "id": "emphasis_3f89d2ef320a557cc95e7a9211ca3f50",
+      "path": [
+        "3a26548bd4f8d735148dba4910eb02e5",
+        "content"
+      ],
+      "range": [
+        124,
+        128
+      ]
+    },
+    "code_54af1c266f1a4a2f06f8f24630337752": {
+      "type": "code",
+      "id": "code_54af1c266f1a4a2f06f8f24630337752",
+      "path": [
+        "3a26548bd4f8d735148dba4910eb02e5",
+        "content"
+      ],
+      "range": [
+        144,
+        152
+      ]
+    },
+    "code_ba4f82ad704cee51a80a7b51a10c1285": {
+      "type": "code",
+      "id": "code_ba4f82ad704cee51a80a7b51a10c1285",
+      "path": [
+        "3a26548bd4f8d735148dba4910eb02e5",
+        "content"
+      ],
+      "range": [
+        130,
+        141
+      ]
+    },
+    "4541db10ccc40347d88174919a0d6135": {
+      "type": "text",
+      "id": "4541db10ccc40347d88174919a0d6135",
+      "source_id": "",
+      "content": "You can easily embed videos in your publication. Substance supports modern HTML5 video formats."
+    },
+    "heading_954ae3118fe6be7d105cf4bea100659b": {
+      "type": "heading",
+      "id": "heading_954ae3118fe6be7d105cf4bea100659b",
+      "source_id": "",
+      "content": "Audio",
+      "level": 2
+    },
+    "b34d95f44ac759789ecf0f3142228a5e": {
+      "type": "text",
+      "id": "b34d95f44ac759789ecf0f3142228a5e",
+      "source_id": "",
+      "content": "Similar to video you can also include sound files in your documents."
+    },
+    "c1869aa50390818841d4603628e6070d": {
+      "type": "text",
+      "id": "c1869aa50390818841d4603628e6070d",
+      "source_id": "",
+      "content": "Please note that due to licensing issues MP3 files can't be played within the Composer as well some browsers. The recommended way is to add two versions of the same audio: MP3 and OGG."
+    },
+    "figure_c19ade1df7331af16d8651ca029f10f0.gif": {
+      "type": "file",
+      "id": "figure_c19ade1df7331af16d8651ca029f10f0.gif",
+      "version": 3,
+      "content_type": "image/gif"
+    },
+    "text_3d1565553b3ba3d1629443d99206c569": {
+      "type": "text",
+      "id": "text_3d1565553b3ba3d1629443d99206c569",
+      "source_id": "",
+      "content": "A video node filled with a MP4 and a WebM version of a video"
+    },
+    "figure_c19ade1df7331af16d8651ca029f10f0": {
+      "type": "figure",
+      "id": "figure_c19ade1df7331af16d8651ca029f10f0",
+      "image": "figure_c19ade1df7331af16d8651ca029f10f0.gif",
+      "caption": "text_3d1565553b3ba3d1629443d99206c569"
+    },
+    "41784737155673383c31fce5371a9bbe": {
+      "type": "text",
+      "id": "41784737155673383c31fce5371a9bbe",
+      "source_id": "",
+      "content": "Unfortunately, browsers support different encodings for video playback. We recommend to use a combination of MP4 (h264) and WebM for maximum browser compatibility."
+    },
+    "figure_d022d3309dc8b774d5b8b33c5f1b141c.gif": {
+      "type": "file",
+      "id": "figure_d022d3309dc8b774d5b8b33c5f1b141c.gif",
+      "version": 2,
+      "content_type": "image/gif"
+    },
+    "text_b6372383a35caf6af3aad837b265bfc4": {
+      "type": "text",
+      "id": "text_b6372383a35caf6af3aad837b265bfc4",
+      "source_id": "",
+      "content": "An audio file only as MP3 version"
+    },
+    "figure_d022d3309dc8b774d5b8b33c5f1b141c": {
+      "type": "figure",
+      "id": "figure_d022d3309dc8b774d5b8b33c5f1b141c",
+      "image": "figure_d022d3309dc8b774d5b8b33c5f1b141c.gif",
+      "caption": "text_b6372383a35caf6af3aad837b265bfc4"
+    },
+    "heading_635a46760cfc16d2e09579f1a80b7b42": {
+      "type": "heading",
+      "id": "heading_635a46760cfc16d2e09579f1a80b7b42",
+      "source_id": "",
+      "content": "OSX: Do not use Edit menu",
+      "level": 2
+    },
+    "b39fc66602d45dfe9882dd769c1e7eca": {
+      "type": "text",
+      "id": "b39fc66602d45dfe9882dd769c1e7eca",
+      "source_id": "",
+      "content": "This menu has currently to be there, as it is currently the only way to enable key bindings for editing (copy, paste, etc.)."
+    },
+    "heading_b88c0d4d9ddeb5e9d86147b26e04ccc8": {
+      "type": "heading",
+      "id": "heading_b88c0d4d9ddeb5e9d86147b26e04ccc8",
+      "source_id": "",
+      "content": "Rich-text paste not working",
+      "level": 2
+    },
+    "0f2182080ca5205a0c6e142879a9c6b4": {
+      "type": "text",
+      "id": "0f2182080ca5205a0c6e142879a9c6b4",
+      "source_id": "",
+      "content": "Currently, if you copy a greater snippet of the document and paste it somewhere else strange things happen. Do not rely on that feature for now."
+    },
+    "heading_78ec5811386ddd825298f6c2453f99a8": {
+      "type": "heading",
+      "id": "heading_78ec5811386ddd825298f6c2453f99a8",
+      "source_id": "",
+      "content": "OSX: global quit breaks application",
+      "level": 2
+    },
+    "382c25f7ca27d4cf27514f4039954181": {
+      "type": "text",
+      "id": "382c25f7ca27d4cf27514f4039954181",
+      "source_id": "",
+      "content": "If you try to quit the entire application from the menu, some things get broken (e.g. the menu will no longer respond)."
+    },
+    "99e8a56814473a74fa2421685445ccd2": {
+      "type": "text",
+      "id": "99e8a56814473a74fa2421685445ccd2",
+      "source_id": "",
+      "content": "Existing SDF files can still be opened, but you will be asked to save it into a folder as soon you save. "
+    },
+    "6f64fbb0056079b20b86919f938ef761": {
+      "type": "text",
+      "id": "6f64fbb0056079b20b86919f938ef761",
+      "source_id": "",
+      "content": "We are looking for a better solution for creating SDF files and will re-activate this feature as soon as possible."
+    },
+    "figure_ca9a158cc197d4ef477e98de41a32cb9.gif": {
+      "type": "file",
+      "id": "figure_ca9a158cc197d4ef477e98de41a32cb9.gif",
+      "version": 2,
+      "content_type": "image/gif"
+    },
+    "text_13c707dc90cac5502e7b01f5028185dd": {
+      "type": "text",
+      "id": "text_13c707dc90cac5502e7b01f5028185dd",
+      "source_id": "",
+      "content": "Save your document into a folder."
+    },
+    "figure_ca9a158cc197d4ef477e98de41a32cb9": {
+      "type": "figure",
+      "id": "figure_ca9a158cc197d4ef477e98de41a32cb9",
+      "image": "figure_ca9a158cc197d4ef477e98de41a32cb9.gif",
+      "caption": "text_13c707dc90cac5502e7b01f5028185dd"
+    },
+    "bccfc05d355bac80d0c8ae1ce3449b23": {
+      "type": "text",
+      "id": "bccfc05d355bac80d0c8ae1ce3449b23",
+      "source_id": "",
+      "content": "We have extended Substance Composer with the ability to add video and audio. To allow you to type accented characters we add support for those so-called dead-keys."
+    },
+    "heading_7cadb2a3f504cd4fa7b80ef476c89b07": {
+      "type": "heading",
+      "id": "heading_7cadb2a3f504cd4fa7b80ef476c89b07",
+      "source_id": "",
+      "content": "Dead-Keys",
+      "level": 2
+    },
+    "a517b400b86937fa0d7cd2201fe7027d": {
+      "type": "text",
+      "id": "a517b400b86937fa0d7cd2201fe7027d",
+      "source_id": "",
+      "content": "We have extended keyboard support to allow you to use so called dead-keys (e.g., `,^). For example you can write things like á, è, â."
+    },
+    "strong_92cc91510b484a78ca9c0c0aba7b7934": {
+      "type": "strong",
+      "id": "strong_92cc91510b484a78ca9c0c0aba7b7934",
+      "path": [
+        "a517b400b86937fa0d7cd2201fe7027d",
+        "content"
+      ],
+      "range": [
+        81,
+        82
+      ]
+    },
+    "strong_a33cf4cfc7ec84d2515d272b9ee262e0": {
+      "type": "strong",
+      "id": "strong_a33cf4cfc7ec84d2515d272b9ee262e0",
+      "path": [
+        "a517b400b86937fa0d7cd2201fe7027d",
+        "content"
+      ],
+      "range": [
+        83,
+        84
+      ]
+    },
+    "cover.jpg": {
+      "type": "file",
+      "id": "cover.jpg",
+      "version": 1,
+      "content_type": "image/jpeg"
+    },
+    "02b02087f063a3b8895bee34db12287d": {
+      "type": "text",
+      "id": "02b02087f063a3b8895bee34db12287d",
+      "source_id": "",
+      "content": ""
+    },
+    "8ba55e363fd6578d521db1f0450f2e3b": {
+      "type": "text",
+      "id": "8ba55e363fd6578d521db1f0450f2e3b",
+      "source_id": "",
+      "content": "(Cover image: Yukon sunrise, Creative Commons /Neil Barman)"
+    },
+    "web_resource_840333f6ec28becdcf102be2feb23e09": {
+      "type": "web_resource",
+      "id": "web_resource_840333f6ec28becdcf102be2feb23e09",
+      "description": "",
+      "url": "http://"
+    },
+    "text_69e0150c3f7770252bd45f0d41e15da7": {
+      "type": "text",
+      "id": "text_69e0150c3f7770252bd45f0d41e15da7",
+      "source_id": "",
+      "content": "Here you can add a description for the audio. "
+    }
+  }
+}
