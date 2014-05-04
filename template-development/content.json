@@ -18,11 +18,12 @@
       "creator": "",
       "title": "How to create a custom template for Substance",
       "authors": [
-        "contributor_66a9ce0d804fdf8b4540a5d2de83fcfb"
+        "contributor_66a9ce0d804fdf8b4540a5d2de83fcfb",
+        "contributor_c02b62c26027152b47bc519d64e54d83"
       ],
       "abstract": "",
       "created_at": "2014-04-18T20:52:39.686Z",
-      "updated_at": "2014-04-18T23:10:54.240Z",
+      "updated_at": "2014-05-04T21:20:13.056Z",
       "published_on": "2014-04-18T20:52:39.686Z"
     },
     "cover": {
@@ -53,7 +54,10 @@
         "heading_fe8a6d7a0767c17c9eefba2b70f7b675",
         "48e90e459dfa83e0b12d271008b0ae22",
         "code_block_543f9811d46e2ba3c013882fd5979b7a",
-        "text_c01092686c7702135f68b4c14372b3b2"
+        "heading_d11a440b15eedf8d510418588bfa5e7a",
+        "d00adeba3adc8d05e19bfe26d9fd806f",
+        "figure_730f6972fdad1122ff32535522401440",
+        "text_5f0ec350c87b7f719086630f22f74af6"
       ]
     },
     "figures": {
@@ -84,7 +88,8 @@
       "id": "info",
       "nodes": [
         "publication_info",
-        "contributor_66a9ce0d804fdf8b4540a5d2de83fcfb"
+        "contributor_66a9ce0d804fdf8b4540a5d2de83fcfb",
+        "contributor_c02b62c26027152b47bc519d64e54d83"
       ]
     },
     "text1": {
@@ -390,12 +395,6 @@
       "source_id": "",
       "content": "<div id=\"<%= node.id %>\" class=\"content-node figure\">\n  <div class=\"content\">\n    <a href=\"<%= node.image %>\" target=\"_blank\">\n      <img src=\"<%= node.image %>\">\n    </a>\n    <% if (node.caption) { %>\n    <div class=\"caption\">\n      <%= annotated([node.caption, 'content']) %>\n    </div>\n    <% } %>\n  </div>\n</div>"
     },
-    "text_c01092686c7702135f68b4c14372b3b2": {
-      "type": "text",
-      "id": "text_c01092686c7702135f68b4c14372b3b2",
-      "source_id": "",
-      "content": ""
-    },
     "license": {
       "type": "license",
       "id": "license",
@@ -410,6 +409,60 @@
       "id": "contributor_66a9ce0d804fdf8b4540a5d2de83fcfb.png",
       "version": 1,
       "content_type": "image/png"
+    },
+    "contributor_c02b62c26027152b47bc519d64e54d83": {
+      "type": "contributor",
+      "id": "contributor_c02b62c26027152b47bc519d64e54d83",
+      "source_id": "",
+      "name": "Brian Shumate",
+      "role": "author",
+      "description": "Web designer, front end developer, distributed systems wrangler, and technical writer who enjoys contributing to awesome open source projects like Substance",
+      "image": "contributor_c02b62c26027152b47bc519d64e54d83.png",
+      "email": "",
+      "contribution": ""
+    },
+    "contributor_c02b62c26027152b47bc519d64e54d83.png": {
+      "type": "file",
+      "id": "contributor_c02b62c26027152b47bc519d64e54d83.png",
+      "version": 1,
+      "content_type": "image/png"
+    },
+    "heading_d11a440b15eedf8d510418588bfa5e7a": {
+      "type": "heading",
+      "id": "heading_d11a440b15eedf8d510418588bfa5e7a",
+      "source_id": "",
+      "content": "Specifying a custom template",
+      "level": 1
+    },
+    "d00adeba3adc8d05e19bfe26d9fd806f": {
+      "type": "text",
+      "id": "d00adeba3adc8d05e19bfe26d9fd806f",
+      "source_id": "",
+      "content": "When it is time to publish your document, you can choose your custom template from the publish dialog as shown in the following screen shot:"
+    },
+    "figure_730f6972fdad1122ff32535522401440.png": {
+      "type": "file",
+      "id": "figure_730f6972fdad1122ff32535522401440.png",
+      "version": 1,
+      "content_type": "image/png"
+    },
+    "text_3f6c147644d1ab403b4cc2be0a864c4d": {
+      "type": "text",
+      "id": "text_3f6c147644d1ab403b4cc2be0a864c4d",
+      "source_id": "",
+      "content": "Choosing a custom template"
+    },
+    "figure_730f6972fdad1122ff32535522401440": {
+      "type": "figure",
+      "id": "figure_730f6972fdad1122ff32535522401440",
+      "image": "figure_730f6972fdad1122ff32535522401440.png",
+      "caption": "text_3f6c147644d1ab403b4cc2be0a864c4d"
+    },
+    "text_5f0ec350c87b7f719086630f22f74af6": {
+      "type": "text",
+      "id": "text_5f0ec350c87b7f719086630f22f74af6",
+      "source_id": "",
+      "content": "The Ocean Blue example template is listed alongside the default Substance template. Click the template name to choose it for rendering your final published output."
     }
   }
 }
