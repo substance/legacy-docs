@@ -2,7 +2,7 @@
   "id": "9d81dbc538c02b5811f7be5fb8a52fcc",
   "schema": [
     "substance-article",
-    "0.4.0"
+    "0.5.0"
   ],
   "nodes": {
     "document": {
@@ -21,9 +21,9 @@
         "contributor_93e4377bb7ef2b4b2a2562aa48231dd0",
         "contributor_68bea766688deac753f8dd51d5f196b4"
       ],
-      "abstract": "",
+      "abstract": "Substance Composer is a modern workspace for creating professional web-first publications. The app works similarly to traditional word processors. There is one important difference though: Substance Composer urges you to focus only on your writing, not on its layout.",
       "created_at": "2014-04-05T16:34:01.762Z",
-      "updated_at": "2014-04-29T22:12:42.677Z",
+      "updated_at": "2014-05-11T17:09:26.463Z",
       "published_on": "2014-04-09T16:34:01.763Z"
     },
     "cover": {
@@ -37,7 +37,6 @@
       "id": "content",
       "nodes": [
         "cover",
-        "67a1ecf64eccbdc6543d5ef31782dd3d",
         "heading_08c3a868e881410d2e61bf95e4e36df8",
         "27a7b3e7cc005a97610683315626ec4c",
         "heading_e1a859e5ec21e01ae5d6f067fc72aaac",
@@ -66,6 +65,10 @@
         "e636ddbe54f8b8c99980f6bd8fdfe316",
         "figure_b1004b3a491fe26a8d0729510db2b4c3",
         "81c17a70bb9a5972ab2acc79d3609adb",
+        "heading_b4326b925dccb30afaef82607576eb0c",
+        "06893d8573fa644cc53e59e81cc62aa9",
+        "8b855419fefdb3bfd338b01c9f5a39c8",
+        "code_block_e7f95e717bc4ac3101a6d324826aa07c",
         "heading_6a91fbce782d8144b7bf40a276a13e29",
         "6eb1e12a8e478488c2abaa92ed4effc8",
         "heading_8c5d5bd3b94ce448710ac0f36e8effff",
@@ -85,6 +88,22 @@
         "f3e87bc120cd6e54cd2f6893190ae616",
         "figure_1fa9221b555dafecf3e50335228c230c",
         "10aee10309528f0fff072216f76ef33e",
+        "heading_c797c26316be178b0f47c471db297914",
+        "b611ac40f59a0fc186e5d0b021b7d205",
+        "feea34ec31f1e14dc1b4767be6e081cb",
+        "list_item_bec7adccfe0d4437a1a3ff46919ceeb1",
+        "list_item_871e5db481eb8584aa97205049d37d3d",
+        "list_item_de355caf11b3c058ce4f53ba5b11d442",
+        "text_46bf6c7dbde9c272eae9cc8b0f72a81f",
+        "figure_e64b7759a37b7c1083d1d591400df65f",
+        "heading_a212b9a4a1dd904babfbd605148056d3",
+        "ea0a06c00c986e43a5aa98c6dc24c88e",
+        "59e59564702106a5bc6c3cf4157a5cc8",
+        "code_block_b60afdf98ad3a5ae9593be1119b0c2c6",
+        "f91414f3ea87c156ed83809ed1e82411",
+        "code_block_88619e3b67fbbff688c3751108096f36",
+        "107636a7965038a51aea9b0ef06f129e",
+        "26c4a7f9d748e7b81f32a2e94bff1410",
         "heading_f00004f1d1353fcf9165db468da83bd9",
         "21592bc5693abc92f529b3cdb06652c7",
         "heading_d2824dd68b7a96838598abeee98bf79e",
@@ -115,7 +134,9 @@
         "web_resource_29f60a9851901fddc3b98bc63e52535d",
         "web_resource_2bde075a494ed9bb103d008b7e57f7c3",
         "web_resource_3e5541cd926944bbb66241a5116747ef",
-        "web_resource_5adc6de56129e9cc8ea20146b96363b2"
+        "web_resource_5adc6de56129e9cc8ea20146b96363b2",
+        "web_resource_e3fb1ef638cb0b318b51a132e9c61db9",
+        "web_resource_765b1b77147e4c8b477cf52d99eb1f53"
       ]
     },
     "remarks": {
@@ -310,12 +331,6 @@
       "source_id": "",
       "content": "Use the text transform tool on the upper left to turn a paragraph into a heading in order to structure your document. To change the level of a heading you can also use TAB and Shift+TAB keyboard shortcuts."
     },
-    "67a1ecf64eccbdc6543d5ef31782dd3d": {
-      "type": "text",
-      "id": "67a1ecf64eccbdc6543d5ef31782dd3d",
-      "source_id": "",
-      "content": "Substance Composer is a modern workspace for creating professional web-first publications. The app works similarly to traditional word processors. There is one important difference though: Substance Composer urges you to focus only on your writing, not on its layout."
-    },
     "f5aec945d9a1255a623fd59c61157a74": {
       "type": "text",
       "id": "f5aec945d9a1255a623fd59c61157a74",
@@ -501,18 +516,6 @@
         26
       ],
       "target": "web_resource_2bde075a494ed9bb103d008b7e57f7c3"
-    },
-    "strong_b36e7f04675ca1656fa1c3049542b577": {
-      "type": "strong",
-      "id": "strong_b36e7f04675ca1656fa1c3049542b577",
-      "path": [
-        "67a1ecf64eccbdc6543d5ef31782dd3d",
-        "content"
-      ],
-      "range": [
-        0,
-        18
-      ]
     },
     "emphasis_874318fafbe2107bcb6e471af3b009df": {
       "type": "emphasis",
@@ -849,7 +852,7 @@
       "type": "text",
       "id": "a0c848ba24e2af47e152c4906d73ce2d",
       "source_id": "",
-      "content": "Use it extensively. Create and host publications. Tell us what you like and what could be improved. While Substance Composer can't cover all use cases we certainly value your feedback. We are also looking for partners that help us take development further and fund certain features that are highly requested. Please get in touch if you are interested in a collaboration."
+      "content": "Use it extensively. Create and host publications. Tell us what you like and what could be improved. While Substance Composer can't cover all possible use cases we really value your feedback. We are also looking for partners that help us take development further and fund certain features that are highly requested. Please get in touch if you are interested in a collaboration."
     },
     "heading_d5d5a604080f2de530669d90fa9e748a": {
       "type": "heading",
@@ -1096,7 +1099,7 @@
       "type": "text",
       "id": "4abef95fe3b4020aebe6879f1a0f88b6",
       "source_id": "",
-      "content": "Substance doesn't have a backend. We chose to start with developing a system that doesn't require any infrastructure. That way we put the user in control of their content. We support all possible hosting options (SFTP, FTP, S3, Rackspace, etc.). We're planning to develop a platform for collaboration, but want to wait until the Substance document format is adopted well enough."
+      "content": "Substance doesn't have a backend (yet). We chose to start with developing a system that doesn't require any infrastructure. That way we put the user in control of their content. We support all possible hosting options (SFTP, FTP, S3, Rackspace, etc.). We're planning to develop a platform for collaboration, but want to wait until the Substance document format is adopted well enough."
     },
     "83c667a1152a6f59477d81c4a0f0c804": {
       "type": "text",
@@ -1110,6 +1113,287 @@
       "source_id": "",
       "content": "What's in an .SDF file?",
       "level": 2
+    },
+    "strong_63f612e7bd66e414c3b83a7a86520e82": {
+      "type": "strong",
+      "id": "strong_63f612e7bd66e414c3b83a7a86520e82",
+      "path": [
+        "document",
+        "abstract"
+      ],
+      "range": [
+        0,
+        18
+      ]
+    },
+    "heading_b4326b925dccb30afaef82607576eb0c": {
+      "type": "heading",
+      "id": "heading_b4326b925dccb30afaef82607576eb0c",
+      "source_id": "",
+      "content": "Add web pages",
+      "level": 2
+    },
+    "06893d8573fa644cc53e59e81cc62aa9": {
+      "type": "text",
+      "id": "06893d8573fa644cc53e59e81cc62aa9",
+      "source_id": "",
+      "content": "It is possible to embed any HTML webpage into your document. That way you can deal with missing node types, such as tables, visualizations etc. However there are a few things you should know:"
+    },
+    "8b855419fefdb3bfd338b01c9f5a39c8": {
+      "type": "text",
+      "id": "8b855419fefdb3bfd338b01c9f5a39c8",
+      "source_id": "",
+      "content": "Substance documents are self-contained, so ideally your embedded HTML page does not link to external resources (images etc.). You can use them, but then readers won't be able to view that content offline. Also, it is impossible for Substance Composer to determine the dimensions of the iFrame used in the document. So you have to set the width and height explicitly on the body element of the web page that you want to embed. Here's a sample HTML page that can be handled by the Composer."
+    },
+    "code_block_e7f95e717bc4ac3101a6d324826aa07c": {
+      "type": "code_block",
+      "id": "code_block_e7f95e717bc4ac3101a6d324826aa07c",
+      "source_id": "",
+      "content": "<html>\n<body data-width=\"300px\" data-height=\"400px\">\n  <table>\n    <tr><th>Item</th><th>Price</th></tr>\n    <tr><td>Wheel</td><td>$ 45.49</td></tr>\n    <tr><td>Brakes</td><td>$ 145.49</td></tr>\n  </table>\n</body>\n</html>"
+    },
+    "heading_c797c26316be178b0f47c471db297914": {
+      "type": "heading",
+      "id": "heading_c797c26316be178b0f47c471db297914",
+      "source_id": "",
+      "content": "Theming",
+      "level": 1
+    },
+    "b611ac40f59a0fc186e5d0b021b7d205": {
+      "type": "text",
+      "id": "b611ac40f59a0fc186e5d0b021b7d205",
+      "source_id": "",
+      "content": "Substance has support for theming. You can develop completely customized layouts for your Substance articles. First let's learn how to install a theme: "
+    },
+    "feea34ec31f1e14dc1b4767be6e081cb": {
+      "type": "text",
+      "id": "feea34ec31f1e14dc1b4767be6e081cb",
+      "source_id": "",
+      "content": "Download the Substance Dark Theme. Extract the contents of the zip file. Now you need to locate the Substance Composer Application data directory on your system."
+    },
+    "web_resource_e3fb1ef638cb0b318b51a132e9c61db9": {
+      "type": "web_resource",
+      "id": "web_resource_e3fb1ef638cb0b318b51a132e9c61db9",
+      "description": "Substance Dark Theme",
+      "url": "http://cdn.substance.io/templates/substance-dark.zip"
+    },
+    "citation_reference_061276279b936c66c0ea9c422b3b08ba": {
+      "type": "citation_reference",
+      "id": "citation_reference_061276279b936c66c0ea9c422b3b08ba",
+      "path": [
+        "feea34ec31f1e14dc1b4767be6e081cb",
+        "content"
+      ],
+      "range": [
+        13,
+        33
+      ],
+      "target": "web_resource_e3fb1ef638cb0b318b51a132e9c61db9"
+    },
+    "list_item_bec7adccfe0d4437a1a3ff46919ceeb1": {
+      "type": "list_item",
+      "id": "list_item_bec7adccfe0d4437a1a3ff46919ceeb1",
+      "level": 1,
+      "content": "OS X: ~/Library/Application Support/Substance Composer"
+    },
+    "list_item_871e5db481eb8584aa97205049d37d3d": {
+      "type": "list_item",
+      "id": "list_item_871e5db481eb8584aa97205049d37d3d",
+      "level": 1,
+      "content": "Windows: %APPDATA%\\Substance Composer"
+    },
+    "list_item_de355caf11b3c058ce4f53ba5b11d442": {
+      "type": "list_item",
+      "id": "list_item_de355caf11b3c058ce4f53ba5b11d442",
+      "level": 1,
+      "content": "Linux: ~/.config/substance-composer"
+    },
+    "strong_e0cd83b46d9fb77dc26584bc647bfdbb": {
+      "type": "strong",
+      "id": "strong_e0cd83b46d9fb77dc26584bc647bfdbb",
+      "path": [
+        "list_item_bec7adccfe0d4437a1a3ff46919ceeb1",
+        "content"
+      ],
+      "range": [
+        0,
+        4
+      ]
+    },
+    "strong_2b9407ec5a55d37c9fd154df7865bf7b": {
+      "type": "strong",
+      "id": "strong_2b9407ec5a55d37c9fd154df7865bf7b",
+      "path": [
+        "list_item_871e5db481eb8584aa97205049d37d3d",
+        "content"
+      ],
+      "range": [
+        0,
+        7
+      ]
+    },
+    "strong_7ed3286e3d4ee6d689c165c9221134e4": {
+      "type": "strong",
+      "id": "strong_7ed3286e3d4ee6d689c165c9221134e4",
+      "path": [
+        "list_item_de355caf11b3c058ce4f53ba5b11d442",
+        "content"
+      ],
+      "range": [
+        0,
+        5
+      ]
+    },
+    "code_080e793338e3b97386b983dd1f2ff98c": {
+      "type": "code",
+      "id": "code_080e793338e3b97386b983dd1f2ff98c",
+      "path": [
+        "list_item_871e5db481eb8584aa97205049d37d3d",
+        "content"
+      ],
+      "range": [
+        9,
+        37
+      ]
+    },
+    "code_2837decf8b4aef0dad03cf6212ce6a0a": {
+      "type": "code",
+      "id": "code_2837decf8b4aef0dad03cf6212ce6a0a",
+      "path": [
+        "list_item_bec7adccfe0d4437a1a3ff46919ceeb1",
+        "content"
+      ],
+      "range": [
+        6,
+        54
+      ]
+    },
+    "text_46bf6c7dbde9c272eae9cc8b0f72a81f": {
+      "type": "text",
+      "id": "text_46bf6c7dbde9c272eae9cc8b0f72a81f",
+      "source_id": "",
+      "content": "Now move the extracted folder (substance-dark) into the templates directory. Restart the Substance Composer and you should be able to select the Substance Dark Theme in the Publish Tab."
+    },
+    "code_911b9f4036ed9817872b5ab14682d001": {
+      "type": "code",
+      "id": "code_911b9f4036ed9817872b5ab14682d001",
+      "path": [
+        "text_46bf6c7dbde9c272eae9cc8b0f72a81f",
+        "content"
+      ],
+      "range": [
+        31,
+        45
+      ]
+    },
+    "figure_e64b7759a37b7c1083d1d591400df65f.png": {
+      "type": "file",
+      "id": "figure_e64b7759a37b7c1083d1d591400df65f.png",
+      "version": 2,
+      "content_type": "image/png"
+    },
+    "text_e4a468825012d91f9b61701cc6fdde90": {
+      "type": "text",
+      "id": "text_e4a468825012d91f9b61701cc6fdde90",
+      "source_id": "",
+      "content": "Publish Dialogue after selecting a custom theme."
+    },
+    "figure_e64b7759a37b7c1083d1d591400df65f": {
+      "type": "figure",
+      "id": "figure_e64b7759a37b7c1083d1d591400df65f",
+      "image": "figure_e64b7759a37b7c1083d1d591400df65f.png",
+      "caption": "text_e4a468825012d91f9b61701cc6fdde90"
+    },
+    "heading_a212b9a4a1dd904babfbd605148056d3": {
+      "type": "heading",
+      "id": "heading_a212b9a4a1dd904babfbd605148056d3",
+      "source_id": "",
+      "content": "Theme development",
+      "level": 2
+    },
+    "ea0a06c00c986e43a5aa98c6dc24c88e": {
+      "type": "text",
+      "id": "ea0a06c00c986e43a5aa98c6dc24c88e",
+      "source_id": "",
+      "content": "Themes are actually pretty simple and can be compared to Wordpress Templates. If you look at the contents of the Substance Dark Theme, you find a nodes folder, which has the HTML markup for all different content types. Main entry point is the document.html file. Under assets you can put anything you need to reference in your template, such as icon-images or stylesheet files. When referencing assets, not that you do not need to prefix /assets/ in your HTML, as the files will be copied to a flat structure."
+    },
+    "59e59564702106a5bc6c3cf4157a5cc8": {
+      "type": "text",
+      "id": "59e59564702106a5bc6c3cf4157a5cc8",
+      "source_id": "",
+      "content": "Here's an example implementation of figure.html."
+    },
+    "f91414f3ea87c156ed83809ed1e82411": {
+      "type": "text",
+      "id": "f91414f3ea87c156ed83809ed1e82411",
+      "source_id": "",
+      "content": "The corresponding style sheet rules could look like this. "
+    },
+    "code_block_b60afdf98ad3a5ae9593be1119b0c2c6": {
+      "type": "code_block",
+      "id": "code_block_b60afdf98ad3a5ae9593be1119b0c2c6",
+      "source_id": "",
+      "content": "<div id=\"<%= node.id %>\" class=\"content-node figure\">\n  <div class=\"content\">\n      <img src=\"<%= node.image %>\">\n    <% if (node.caption) { %>\n    <div class=\"caption\"><%= annotated([node.caption, 'content']) %></div>\n    <% } %>\n  </div>\n</div>"
+    },
+    "26c4a7f9d748e7b81f32a2e94bff1410": {
+      "type": "text",
+      "id": "26c4a7f9d748e7b81f32a2e94bff1410",
+      "source_id": "",
+      "content": "Given the power of custom theming, Substance Composer is a great tool for web designers, who can enter the contents of a page, and easily generate HTML+CSS, based on their custom templates. Think of it like Jekyll, but with a visual front-end for content input. Also, when Jekyll is for multi-page blogs, Substance is for single-page web publications."
+    },
+    "107636a7965038a51aea9b0ef06f129e": {
+      "type": "text",
+      "id": "107636a7965038a51aea9b0ef06f129e",
+      "source_id": "",
+      "content": "However, you can do anything you want with regards to markup structure and CSS, there's are no rules you need to follow. You can also exclude information you don't need in your final publication. E.g. the list of authors. Feel free to build on the existing Substance themes to create your own."
+    },
+    "code_block_88619e3b67fbbff688c3751108096f36": {
+      "type": "code_block",
+      "id": "code_block_88619e3b67fbbff688c3751108096f36",
+      "source_id": "",
+      "content": ".content-node.figure { margin-bottom: 2em; background:#121415; }\n\n.content-node.figure .content { max-width: 1000px; margin: 0px auto; text-align: center; }\n\n.content-node.figure .content a { text-align: center; }\n\n.content-node.figure .caption { font-size: 14px; color: #a9c5c5; margin: 0 auto; }\n\n.content-node.figure img { max-width: 100%; }"
+    },
+    "code_96dd10c67e1bd8f70c6f26f2a345df18": {
+      "type": "code",
+      "id": "code_96dd10c67e1bd8f70c6f26f2a345df18",
+      "path": [
+        "text_46bf6c7dbde9c272eae9cc8b0f72a81f",
+        "content"
+      ],
+      "range": [
+        56,
+        65
+      ]
+    },
+    "web_resource_765b1b77147e4c8b477cf52d99eb1f53": {
+      "type": "web_resource",
+      "id": "web_resource_765b1b77147e4c8b477cf52d99eb1f53",
+      "description": "Jekyll is a blog-aware static site generator",
+      "url": "http://jekyllrb.com/"
+    },
+    "citation_reference_821042a1ade750abd7f10a92503f0ba6": {
+      "type": "citation_reference",
+      "id": "citation_reference_821042a1ade750abd7f10a92503f0ba6",
+      "path": [
+        "26c4a7f9d748e7b81f32a2e94bff1410",
+        "content"
+      ],
+      "range": [
+        207,
+        213
+      ],
+      "target": "web_resource_765b1b77147e4c8b477cf52d99eb1f53"
+    },
+    "code_0ebc9529fb21804b50758ae8c6bced0e": {
+      "type": "code",
+      "id": "code_0ebc9529fb21804b50758ae8c6bced0e",
+      "path": [
+        "list_item_de355caf11b3c058ce4f53ba5b11d442",
+        "content"
+      ],
+      "range": [
+        7,
+        35
+      ]
     }
   }
 }

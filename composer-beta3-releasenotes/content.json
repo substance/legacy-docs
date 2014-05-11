@@ -23,7 +23,7 @@
       ],
       "abstract": "In a vigorous effort we created the next version of the Substance Composer - Beta 3. We are very proud to present a wonderful new features, most importantly, native support for Video and Audio. In addition to Windows and OSX, we now have a bundle for Ubuntu ready. We are grateful for your feedback and reports during the last 2 weeks. It helped us to fix numerous bugs and increased the overall stability. ",
       "created_at": "2014-05-02T16:18:11.610Z",
-      "updated_at": "2014-05-02T18:27:14.308Z",
+      "updated_at": "2014-05-02T20:27:06.726Z",
       "published_on": "2014-05-02T16:18:11.611Z"
     },
     "cover": {
@@ -132,8 +132,8 @@
       "source_id": "",
       "name": "Oliver Buchtala",
       "role": "author",
-      "description": "",
-      "image": "",
+      "description": "Oliver Buchtala has joined Substance in 2012, turning it from a platform into a flexible and extensible technology stack. He has worked over 15 years in software development.",
+      "image": "contributor_62289cbe8a246ad5dcc35c31b06903d2.jpg",
       "email": "",
       "contribution": ""
     },
@@ -143,8 +143,8 @@
       "source_id": "",
       "name": "Michael Aufreiter",
       "role": "author",
-      "description": "",
-      "image": "",
+      "description": "As the initiator of Substance, Michael is passionate about the idea of open digital publishing. He coordinates the project and leads UI/UX development.",
+      "image": "contributor_d7bacd92401215f96351dd2b201f05af.jpg",
       "email": "",
       "contribution": ""
     },
@@ -480,6 +480,18 @@
       "id": "text_69e0150c3f7770252bd45f0d41e15da7",
       "source_id": "",
       "content": "Here you can add a description for the audio. "
+    },
+    "contributor_d7bacd92401215f96351dd2b201f05af.jpg": {
+      "type": "file",
+      "id": "contributor_d7bacd92401215f96351dd2b201f05af.jpg",
+      "version": 1,
+      "content_type": "image/jpeg"
+    },
+    "contributor_62289cbe8a246ad5dcc35c31b06903d2.jpg": {
+      "type": "file",
+      "id": "contributor_62289cbe8a246ad5dcc35c31b06903d2.jpg",
+      "version": 1,
+      "content_type": "image/jpeg"
     }
   }
 }
